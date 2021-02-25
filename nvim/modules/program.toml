@@ -1,0 +1,164 @@
+
+[[plugins]]
+repo = 'editorconfig/editorconfig-vim'
+
+[[plugins]]
+repo = 'Yggdroot/indentLine'
+on_event = 'BufReadPre'
+hook_source = '''
+    let g:indentLine_enabled = 1
+    let g:indentLine_char='┆'
+    let g:indentLine_fileTypeExclude = ['defx', 'denite','startify','tagbar','vista_kind','vista','coc-explorer','dashboard']
+    let g:indentLine_concealcursor = 'niv'
+    let g:indentLine_showFirstIndentLevel =1
+'''
+
+[[plugins]]
+repo = 'tyru/caw.vim'
+depends = 'context_filetype.vim'
+on_map = { nx = '<Plug>' }
+
+[[plugins]]
+repo = 'liuchengxu/vista.vim'
+on_cmd = ['Vista', 'Vista!', 'Vista!!']
+hook_source = '''
+    let g:vista#renderer#enable_icon = 1
+    let g:vista_disable_statusline = 1
+    let g:vista_default_executive = 'ctags'
+    let g:vista_echo_cursor_strategy = 'floating_win'
+    let g:vista_vimwiki_executive = 'markdown'
+    let g:vista_executive_for = {
+      \ 'vimwiki': 'markdown',
+      \ 'pandoc': 'markdown',
+      \ 'markdown': 'toc',
+      \ 'yaml': 'coc',
+      \ 'typescript': 'coc',
+      \ 'typescriptreact': 'coc',
+      \ }
+'''
+
+[[plugins]]
+repo = 'ludovicchabant/vim-gutentags'
+if = 'executable("ctags")'
+on_event = ['BufReadPost', 'BufWritePost']
+hook_source = '''
+    let g:gutentags_cache_dir = $DATA_PATH . '/tags'
+    let g:gutentags_project_root = ['.root', '.git', '.svn', '.hg', '.project','go.mod','/usr/local']
+    let g:gutentags_generate_on_write = 1
+    let g:gutentags_generate_on_missing = 1
+    let g:gutentags_generate_on_new = 0
+    let g:gutentags_exclude_filetypes = [ 'defx', 'denite', 'vista', 'magit' ]
+    let g:gutentags_ctags_extra_args = ['--output-format=e-ctags']
+    let g:gutentags_ctags_exclude = ['*.json', '*.js', '*.ts', '*.jsx', '*.css', '*.less', '*.sass', '*.go', '*.dart', 'node_modules', 'dist', 'vendor']
+'''
+
+[[plugins]]
+repo = 'thinca/vim-quickrun'
+on_cmd = 'QuickRun'
+hook_source = '''
+    let g:quickrun_config = {
+      \   "_" : {
+        \       "outputter" : "message",
+        \   },
+        \}
+    let g:quickrun_no_default_key_mappings = 1
+'''
+
+[[plugins]]
+repo = 'mattn/emmet-vim'
+on_event = 'InsertEnter'
+on_ft = [ 'html','css','javascript','javascriptreact','vue','typescript','typescriptreact' ]
+hook_source = '''
+    let g:user_emmet_complete_tag = 0
+    let g:user_emmet_install_global = 0
+    let g:user_emmet_install_command = 0
+    let g:user_emmet_mode = 'i'
+'''
+
+[[plugins]]
+repo = 'ahonn/vim-fileheader'
+hook_source = '''
+		let g:fileheader_by_git_config = 1
+		let g:fileheader_delimiter_map = {
+			\	'markdown': { 'begin': '---', 'char': '', 'end': '---' }
+			\}
+		 let g:fileheader_templates_map = {
+			\ 'markdown': [
+				\ 'author: {{author}}',
+				\ 'created_date: {{created_date}}',
+				\ 'modified_date: {{modified_date}}',
+				\ 'title: ',
+				\ 'tags: ',
+				\ 'description: ',
+				\ 'categories: ',
+				\ 'publish: true',
+				\ 'show_comments: true',
+				\ 'secret_code: '
+				\ ]
+			\ }
+'''
+
+[[plugins]]
+repo = 'sakshamgupta05/vim-todo-highlight'
+hook_add = '''
+	let g:todo_highlight_config = {
+		\ 'TODO': {
+			\ 'gui_fg_color': 'black',
+			\ 'gui_bg_color': '#FF8C00',
+			\ 'cterm_fg_color': 'black',
+			\ 'cterm_bg_color': '#FF8C00'
+		\ },
+		\ 'NOTE': {
+			\ 'gui_fg_color': 'white',
+			\ 'gui_bg_color': '#ff046f',
+			\ 'cterm_fg_color': 'white',
+			\ 'cterm_bg_color': '#ff046f'
+		\ },
+		\ 'INFO': {
+			\ 'gui_fg_color': 'white',
+			\ 'gui_bg_color': '#007e74',
+			\ 'cterm_fg_color': 'white',
+			\ 'cterm_bg_color': '#007e74'
+		\ },
+		\ 'INPUT': {
+			\ 'gui_fg_color': 'black',
+			\ 'gui_bg_color': '#b4d9fb',
+			\ 'cterm_fg_color': 'black',
+			\ 'cterm_bg_color': '#b4d9fb'
+		\ },
+		\ 'OUTPUT': {
+			\ 'gui_fg_color': 'black',
+			\ 'gui_bg_color': '#32ea8d',
+			\ 'cterm_fg_color': 'black',
+			\ 'cterm_bg_color': '#32ea8d'
+		\ },
+		\ 'FIXME': {
+			\ 'gui_fg_color': 'black',
+			\ 'gui_bg_color': '#ffff22',
+			\ 'cterm_fg_color': 'black',
+			\ 'cterm_bg_color': '#ffff22'
+		\ },
+		\ 'BUG': {
+			\ 'gui_fg_color': 'black',
+			\ 'gui_bg_color': '#ff0011',
+			\ 'cterm_fg_color': 'black',
+			\ 'cterm_bg_color': '#ff0011'
+		\ },
+		\ 'IDEA': {
+			\ 'gui_fg_color': 'black',
+			\ 'gui_bg_color': '#21de5b',
+			\ 'cterm_fg_color': 'black',
+			\ 'cterm_bg_color': '#21de5b'
+		\ },
+		\ 'OTHER': {
+			\ 'gui_fg_color': 'black',
+			\ 'gui_bg_color': '#eeaaaa',
+			\ 'cterm_fg_color': 'black',
+			\ 'cterm_bg_color': '#eeaaaa'
+		\ }
+	\ }
+
+'''
+
+[[plugins]]
+repo = 'hotoo/pangu.vim'

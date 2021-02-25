@@ -1,0 +1,39 @@
+
+[[plugins]]
+repo = 'ryanoasis/vim-devicons'
+
+
+[[plugins]]
+repo = 'gruvbox-community/gruvbox'
+
+[[plugins]]
+repo = 'ayu-theme/ayu-vim'
+
+[[plugins]]
+repo = 'mhartington/oceanic-next'
+
+[[plugins]]
+repo = 'dracula/vim'
+
+[[plugins]]
+repo = 'NLKNguyen/papercolor-theme'
+
+[[plugins]]
+repo = 'lifepillar/vim-gruvbox8'
+
+[[plugins]]
+repo = 'joshdick/onedark.vim'
+
+
+[[plugins]]
+repo = 'hardcoreplayers/dashboard-nvim'
+
+[[plugins]]
+repo = 'hardcoreplayers/vim-buffet'
+on_event = ['BufReadPre','BufNewFile']
+
+[[plugins]]
+repo = 'hardcoreplayers/spaceline.vim'
+hook_source = '''
+	let g:spaceline_seperate_style= 'slant'
+'''

@@ -1,0 +1,23 @@
+<?xml version="1.0"encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC"-//Apple//DTD PLIST 1.0//EN"
+"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>KeepAlive</key>
+        <true/>
+        <key>RunAtLoad</key>
+        <true/>
+        <key>Label</key>
+        <string>Jupyter_notebook</string>
+        <key>ProgramArguments</key>
+        <array>
+            <string>/usr/local/bin/jupyter-notebook</string>
+						<string>--config</string>
+						<string>"/Users/liona/.jupyter/jupyter_notebook_config.py"</string>
+				</array>
+				<key>RunAtLoad</key>
+				<true/>
+				<key>KeepAlive</key>
+				<true/>
+    </dict>
+</plist>
