@@ -30,3 +30,11 @@
 ## 注意事项
 
 - Rime 配置可以使用软连接
+- kitty 里面的 ranger 使用 python2 的 pillow 库，Mac 默认是没有安装 pip 的：
+	```sh
+	curl https://bootstrap.pypa.io/2.7/get-pip.py -o get-pip.py
+	python2 get-pip.py
+	rm get-pip.py
+	```
+	配置完毕后就可以在 kitty 里面预览图片了
+
