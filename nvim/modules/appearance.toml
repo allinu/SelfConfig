@@ -24,9 +24,28 @@ repo = 'lifepillar/vim-gruvbox8'
 [[plugins]]
 repo = 'joshdick/onedark.vim'
 
-
 [[plugins]]
 repo = 'hardcoreplayers/dashboard-nvim'
+hook_source = '''
+	let g:dashboard_custom_header = [
+			\'',
+			\ '',
+			\ '',
+			\' ██╗     ██╗ ██████╗ ███╗   ██╗ █████╗ ',
+			\' ██║     ██║██╔═══██╗████╗  ██║██╔══██╗',
+			\' ██║     ██║██║   ██║██╔██╗ ██║███████║',
+			\' ██║     ██║██║   ██║██║╚██╗██║██╔══██║',
+			\' ███████╗██║╚██████╔╝██║ ╚████║██║  ██║',
+			\' ╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═╝',
+			\ '',
+			\ '',
+			\ '',
+			\ ]
+'''
+
+[[plugins]]
+repo = 'bagrat/vim-buffet'
+on_event = ['BufReadPre','BufNewFile']
 
 [[plugins]]
 repo = 'hardcoreplayers/spaceline.vim'

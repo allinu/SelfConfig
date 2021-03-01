@@ -43,6 +43,20 @@ hook_source = '''
 '''
 
 [[plugins]]
+repo = 'fatih/vim-go'
+on_ft = ['go','gomod']
+hook_source = '''
+	call coc#config('languageserver', {
+	\ 'golang': {
+		\ "command": "gopls",
+		\ "rootPatterns": ["go.mod"],
+		\ "disableWorkspaceFolders": "true",
+		\ "filetypes": ["go"]
+		\ }
+		\})
+'''
+
+[[plugins]]
 repo = 'arzg/vim-sh'
 on_ft = [ 'sh','zsh' ]
 hook_source = '''

@@ -97,13 +97,6 @@ https://dl.pstmn.io/download/latest/osx
  header=User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36
  header=Connection: keep-alive
 https://dl.pstmn.io/download/latest/osx	
- gid=707f42c9c4748036
- out=Postman-osx-8.0.6.zip
- referer=https://www.postman.com/downloads/
- header=Cookie:
- header=User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36
- header=Connection: keep-alive
-https://dl.pstmn.io/download/latest/osx	
  gid=caeeac3516d72e1c
  out=Postman-osx-8.0.6.zip
  referer=https://www.postman.com/downloads/
@@ -114,6 +107,13 @@ https://github-releases.githubusercontent.com/140830988/dfb94d00-7872-11eb-9f75-
  gid=5aa1c40f7c130d27
  out=iina+.0.5.13.dmg
  referer=https://github.com/xjbeta/iina-plus/releases
+ header=Cookie:
+ header=User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36
+ header=Connection: keep-alive
+https://dl.pstmn.io/download/latest/osx	
+ gid=707f42c9c4748036
+ out=Postman-osx-8.0.6.zip
+ referer=https://www.postman.com/downloads/
  header=Cookie:
  header=User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36
  header=Connection: keep-alive

@@ -290,3 +290,18 @@ let g:spaceline_seperate_style = 'curve'
 "let g:spaceline_seperate_style = 'none'
 
 autocmd BufWritePre *.markdown,*.md,*.text,*.txt,*.wiki,*.cnx call PanGuSpacing()
+
+
+" Note: Make sure the function is defined before `vim-buffet` is loaded.
+function! g:BuffetSetCustomColors()
+  hi! BuffetCurrentBuffer cterm=NONE ctermbg=5 ctermfg=8 guibg=#FFaa00 guifg=#000000
+  hi! BuffetBuffer cterm=NONE ctermbg=5 ctermfg=8 guibg=#000000 guifg=#FFFFFF
+  hi! BuffetModCurrentBuffer cterm=NONE ctermbg=5 ctermfg=8 guibg=#FF0066 guifg=#FFFFFF
+  hi! BuffetTrunc cterm=NONE ctermbg=5 ctermfg=8 guibg=#FF0066 guifg=#FFFFFF
+  hi! BuffetTab cterm=NONE ctermbg=5 ctermfg=8 guibg=#000000 guifg=#FF0000
+endfunction
+
+let g:buffet_powerline_separators = 1
+let g:buffet_tab_icon = "\uf2d6"
+let g:buffet_left_trunc_icon = "\ue0b6"
+let g:buffet_right_trunc_icon = "\ue0b4"
