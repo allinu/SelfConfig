@@ -7,23 +7,6 @@ hook_add = '''
 	let g:vim_jsx_pretty_colorful_config = 1
 '''
 
-[[plugins]]
-repo = 'hardcoreplayers/go-nvim'
-on_ft = ['go','gomod']
-hook_add = '''
-	nnoremap gcg :GoAuToComment<CR>
-'''
-hook_source = '''
-	call coc#config('languageserver', {
-	\ 'golang': {
-		\ "command": "gopls",
-		\ "rootPatterns": ["go.mod"],
-		\ "disableWorkspaceFolders": "true",
-		\ "filetypes": ["go"]
-		\ }
-		\})
-'''
-
 [[pluings]]
 repo = 'jackguo380/vim-lsp-cxx-highlight'
 on_ft = [ 'c','cpp' ]

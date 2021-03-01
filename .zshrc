@@ -2,6 +2,8 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="/usr/local/opt/node@14/bin:$PATH"
 export PATH="/Users/liona/Library/Python/3.9/bin:$PATH"
+export PATH="/usr/local/opt/go@1.15/bin:$PATH"
+export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
 export PATH="$HOME/.go/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
@@ -282,3 +284,5 @@ alias vim="nvim"
 alias icat="kitty +kitten icat"
 alias top="bpytop"
 alias cat="bat"
+alias python="python3"
+alias pip="pip3"

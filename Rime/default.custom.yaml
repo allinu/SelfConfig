@@ -2,8 +2,10 @@ patch:
   schema_list:
     - schema: luna_pinyin_simp      # 朙月拼音简化字
   # - schema: luna_pinyin           # 朙月拼音（繁体）
-        
-  menu/page_size: 9   #候选词个数
+
+  menu/page_size: 7   #候选词个数
+  switcher/hotkeys:
+    - "Control+Shift+grave"
 
   ascii_composer/good_old_caps_lock: true     # 若为true，caps只切换大小写
   ascii_composer/switch_key:
