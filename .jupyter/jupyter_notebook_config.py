@@ -1277,3 +1277,11 @@ c.NotebookApp.port = 8888
 #  inactive timeout value.
 #  Default: 300
 # c.TerminalManager.cull_interval = 300
+origin = '*'
+ 
+c.Spawner.args = [f'--NotebookApp.allow_origin={origin}']
+c.NotebookApp.tornado_settings = {
+    'headers': {
+        'Access-Control-Allow-Origin': origin,
+    },
+}

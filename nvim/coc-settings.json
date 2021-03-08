@@ -161,5 +161,6 @@
 		".pyenv",
 		".direnv"
 	],
-	"python.pythonPath": "./venv/bin/python"
+	"python.pythonPath": "./venv/bin/python",
+	"rainbow-fart.enabled":true
 }

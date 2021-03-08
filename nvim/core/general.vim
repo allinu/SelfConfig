@@ -294,11 +294,14 @@ autocmd BufWritePre *.markdown,*.md,*.text,*.txt,*.wiki,*.cnx call PanGuSpacing(
 
 " Note: Make sure the function is defined before `vim-buffet` is loaded.
 function! g:BuffetSetCustomColors()
-  hi! BuffetCurrentBuffer cterm=NONE ctermbg=5 ctermfg=8 guibg=#FFaa00 guifg=#000000
+  hi! BuffetCurrentBuffer cterm=NONE ctermbg=5 ctermfg=8 guibg=#22ffaa guifg=#000000
+  hi! BuffetActiveBuffer cterm=NONE ctermbg=5 ctermfg=8 guibg=#000000 guifg=#FFaa00
   hi! BuffetBuffer cterm=NONE ctermbg=5 ctermfg=8 guibg=#000000 guifg=#FFFFFF
   hi! BuffetModCurrentBuffer cterm=NONE ctermbg=5 ctermfg=8 guibg=#FF0066 guifg=#FFFFFF
+  hi! BuffetModActiveBuffer cterm=NONE ctermbg=5 ctermfg=8 guibg=#000000 guifg=#FF0066
+  hi! BuffetModBuffer cterm=NONE ctermbg=5 ctermfg=8 guibg=#000000 guifg=#FF0066
   hi! BuffetTrunc cterm=NONE ctermbg=5 ctermfg=8 guibg=#FF0066 guifg=#FFFFFF
-  hi! BuffetTab cterm=NONE ctermbg=5 ctermfg=8 guibg=#000000 guifg=#FF0000
+  hi! BuffetTab cterm=NONE ctermbg=5 ctermfg=8 guibg=#000000 guifg=#FF0066
 endfunction
 
 let g:buffet_powerline_separators = 1

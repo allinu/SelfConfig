@@ -1,7 +1,51 @@
+https://download-cf.jetbrains.com/webstorm/WebStorm-2020.3.2.dmg	
+ gid=328e8a679b76fb18
+ out=WebStorm-2020.3.2.dmg
+ referer=https://www.jetbrains.com/webstorm/download/download-thanks.html?platform=mac
+ header=Cookie: JBA=9db13493-3661-48db-8b30-b681db75dab1
+ header=User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36
+ header=Connection: keep-alive
+https://download-cf.jetbrains.com/webstorm/WebStorm-2020.3.2.dmg	
+ gid=173fece1d6577c32
+https://github-releases.githubusercontent.com/140830988/dfb94d00-7872-11eb-9f75-609f6d4b3b84?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210226%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210226T190224Z&X-Amz-Expires=300&X-Amz-Signature=bfe6e667d4157001980a20dfcc9b63801baab8aca740bfc2614a254985fe53b6&X-Amz-SignedHeaders=host&actor_id=32992109&key_id=0&repo_id=140830988&response-content-disposition=attachment%3B%20filename%3Diina%2B.0.5.13.dmg&response-content-type=application%2Foctet-stream	
+ gid=5aa1c40f7c130d27
+ out=iina+.0.5.13.dmg
+ referer=https://github.com/xjbeta/iina-plus/releases
+ header=Cookie:
+ header=User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36
+ header=Connection: keep-alive
+https://dl.pstmn.io/download/latest/osx	
+ gid=caeeac3516d72e1c
+ out=Postman-osx-8.0.6.zip
+ referer=https://www.postman.com/downloads/
+ header=Cookie:
+ header=User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36
+ header=Connection: keep-alive
+https://download-cf.jetbrains.com/python/pycharm-professional-2020.3.3.dmg	
+ gid=b71af9e1283befc3
+ out=pycharm-professional-2020.3.3.dmg
+ referer=https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=mac
+ header=Cookie:
+ header=User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36
+ header=Connection: keep-alive
 https://github-releases.githubusercontent.com/140830988/dfb94d00-7872-11eb-9f75-609f6d4b3b84?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210226%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210226T190247Z&X-Amz-Expires=300&X-Amz-Signature=1fecea0d95b5c7c6229535391e4163807b8105e8ecdd65714c059a0f74430e66&X-Amz-SignedHeaders=host&actor_id=32992109&key_id=0&repo_id=140830988&response-content-disposition=attachment%3B%20filename%3Diina%2B.0.5.13.dmg&response-content-type=application%2Foctet-stream	
  gid=014ef417086c7a71
  out=iina+.0.5.13.dmg
  referer=https://github.com/xjbeta/iina-plus/releases
+ header=Cookie:
+ header=User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36
+ header=Connection: keep-alive
+https://dl.pstmn.io/download/latest/osx	
+ gid=7a09fb601f96fd1d
+ out=Postman-osx-8.0.6.zip
+ referer=https://www.postman.com/downloads/
+ header=Cookie:
+ header=User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36
+ header=Connection: keep-alive
+https://dl.pstmn.io/download/latest/osx	
+ gid=707f42c9c4748036
+ out=Postman-osx-8.0.6.zip
+ referer=https://www.postman.com/downloads/
  header=Cookie:
  header=User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36
  header=Connection: keep-alive
@@ -89,31 +133,3 @@ https://dl.pstmn.io/download/latest/osx
  follow-metalink=true
  metalink-preferred-protocol=none
  metalink-enable-unique-protocol=true
-https://dl.pstmn.io/download/latest/osx	
- gid=7a09fb601f96fd1d
- out=Postman-osx-8.0.6.zip
- referer=https://www.postman.com/downloads/
- header=Cookie:
- header=User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36
- header=Connection: keep-alive
-https://dl.pstmn.io/download/latest/osx	
- gid=caeeac3516d72e1c
- out=Postman-osx-8.0.6.zip
- referer=https://www.postman.com/downloads/
- header=Cookie:
- header=User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36
- header=Connection: keep-alive
-https://github-releases.githubusercontent.com/140830988/dfb94d00-7872-11eb-9f75-609f6d4b3b84?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210226%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210226T190224Z&X-Amz-Expires=300&X-Amz-Signature=bfe6e667d4157001980a20dfcc9b63801baab8aca740bfc2614a254985fe53b6&X-Amz-SignedHeaders=host&actor_id=32992109&key_id=0&repo_id=140830988&response-content-disposition=attachment%3B%20filename%3Diina%2B.0.5.13.dmg&response-content-type=application%2Foctet-stream	
- gid=5aa1c40f7c130d27
- out=iina+.0.5.13.dmg
- referer=https://github.com/xjbeta/iina-plus/releases
- header=Cookie:
- header=User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36
- header=Connection: keep-alive
-https://dl.pstmn.io/download/latest/osx	
- gid=707f42c9c4748036
- out=Postman-osx-8.0.6.zip
- referer=https://www.postman.com/downloads/
- header=Cookie:
- header=User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36
- header=Connection: keep-alive
