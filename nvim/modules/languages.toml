@@ -138,5 +138,10 @@ on_ft = 'stylus'
 
 [[plugins]]
 repo = 'mattn/emmet-vim'
-on_ft = ['html','css']
+hook_source = '''
+	let g:user_emmet_mode='a'
+	let g:user_zen_expandabbr_key = '<tab>'
+	imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
+'''
+on_ft = ['html','css','vue-html']
 
