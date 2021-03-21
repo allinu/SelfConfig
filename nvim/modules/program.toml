@@ -160,5 +160,3 @@ hook_add = '''
 
 '''
 
-[[plugins]]
-repo = 'hotoo/pangu.vim'

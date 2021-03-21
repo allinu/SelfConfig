@@ -5,6 +5,7 @@ export PATH="/Users/liona/Library/Python/3.9/bin:$PATH"
 export PATH="/usr/local/opt/go@1.15/bin:$PATH"
 export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
 export PATH="$HOME/.go/bin:$PATH"
+export PATH="/usr/local/opt/llvm/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/liona/.oh-my-zsh"
@@ -18,6 +19,9 @@ export ZSH_DISABLE_COMPFIX=true
 export EDITOR='nvim'
 export GO111MODULE="on"
 export GOPROXY="https://goproxy.cn"
+
+# config proxy
+export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
 
 
 # Set list of themes to pick from when loading at random

@@ -75,6 +75,8 @@
 		"typescript",
 		"typescriptreact",
 		"go",
+		"c",
+		"cpp",
 		"vue",
 		"python",
 		"json"
