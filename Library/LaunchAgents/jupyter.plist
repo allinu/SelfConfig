@@ -11,7 +11,7 @@
         <string>Jupyter_notebook</string>
         <key>ProgramArguments</key>
         <array>
-            <string>/Library/Frameworks/Python.framework/Versions/3.9/bin/jupyter-notebook</string>
+            <string>/usr/local/bin/jupyter-notebook</string>
 						<string>--config</string>
 						<string>"/Users/liona/.jupyter/jupyter_notebook_config.py"</string>
 				</array>
