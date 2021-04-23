@@ -27,7 +27,7 @@ patch:
       inline_preedit: true                    # 单行显示，false双行显示
       # candidate_format: "\uf444 %@ \u2005"   # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间的。
       candidate_format: "%c %@ "   # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间的。
-      font_face: "Smartisan Compact CNS Medium"      # 候选词字体
+      font_face: "Smartisan Compact CNS bold"      # 候选词字体
       font_point: 15                          # 候选文字大小
       label_font_point: 13                    # 候选编号大小
       label_font_face: "FiraCode Nerd Font" # 候选词编号字体
@@ -56,7 +56,7 @@ patch:
       inline_preedit: true                    # 单行显示，false双行显示
       # candidate_format: "\uf444 %@ \u2005"   # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间的。
       candidate_format: "%c %@ "   # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间的。
-      font_face: "Smartisan Compact CNS Medium"      # 候选词字体
+      font_face: "Smartisan Compact CNS bold"      # 候选词字体
       font_point: 15                          # 候选文字大小
       label_font_point: 15                    # 候选编号大小
       label_font_face: "FiraCode Nerd Font" # 候选词编号字体
@@ -77,6 +77,9 @@ patch:
     com.microsoft.VSCode:           # Visual Studio Code
       ascii_mode: false           # 开启中文输入
       ascii_punct: true           # 半角符号即中文状态输入英文标点
+    com.googlecode.iterm2:
+      ascii_mode: true
+      ascii_punct: true
     com.apple.Terminal:
       ascii_mode: true
       ascii_punct: true           # 半角符号即中文状态输入英文标点

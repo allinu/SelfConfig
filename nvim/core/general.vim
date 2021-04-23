@@ -289,7 +289,7 @@ endif
 let g:spaceline_seperate_style = 'curve'
 "let g:spaceline_seperate_style = 'none'
 
-autocmd BufWritePre *.markdown,*.md,*.text,*.txt,*.wiki,*.cnx call PanGuSpacing()
+" autocmd BufWritePre *.markdown,*.md,*.text,*.txt,*.wiki,*.cnx call PanGuSpacing()
 
 
 " Note: Make sure the function is defined before `vim-buffet` is loaded.

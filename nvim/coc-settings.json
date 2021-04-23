@@ -164,5 +164,6 @@
 		".direnv"
 	],
 	"python.pythonPath": "./venv/bin/python",
-	"rainbow-fart.enabled":true
+	"rainbow-fart.enabled":true,
+	"rainbow-fart.ffplay": "/usr/local/bin/ffplay"
 }
