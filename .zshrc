@@ -7,6 +7,7 @@ export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
 export PATH="$HOME/.go/bin:$PATH"
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/go/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/liona/.oh-my-zsh"
