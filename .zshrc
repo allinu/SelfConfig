@@ -16,7 +16,7 @@ export ZSH="/Users/liona/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="liona"
+ZSH_THEME="robbyrussell"
 export ZSH_DISABLE_COMPFIX=true
 export EDITOR='nvim'
 export GO111MODULE="on"
