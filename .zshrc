@@ -98,6 +98,26 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+# export MANPATH="/usr/local/man:$MANPATH"
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
+#if [[ -z "$TMUX" ]] && [ "$ZSH" != "" ]; then
+#tmux has 2> /dev/null || tmux new-session -s workspace && tmux attach
+#or
+#exit
+##test -z "$TMUX" && (tmux attach || tmux new-session)
+#fi
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
 #compdef _gh gh
 
 # zsh completion for gh                                   -*- shell-script -*-
@@ -257,25 +277,6 @@ _gh()
 if [ "$funcstack[1]" = "_gh" ]; then
 	_gh
 fi
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-#if [[ -z "$TMUX" ]] && [ "$ZSH" != "" ]; then
-#tmux has 2> /dev/null || tmux new-session -s workspace && tmux attach
-#or
-#exit
-##test -z "$TMUX" && (tmux attach || tmux new-session)
-#fi
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
