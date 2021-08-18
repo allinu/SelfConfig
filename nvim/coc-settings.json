@@ -1,3 +1,4 @@
+/* cSpell:disable */
 {
 	"suggest.triggerAfterInsertEnter": false,
 	"suggest.timeout": 500,
@@ -157,13 +158,26 @@
 		"yml",
 		"vim"
 	],
-	"python.venvFolders": [
-		"envs",
+	"cSpell.words": ["venv","pyenv","pylint","yapf","ffplay","ffmpeg","ans","liona","maskros"],
+	"cSpell.ignorePaths": [
+        "node_modules",
+        "**/node_modules",
+        "**/node_modules/**",
+        "node_modules/**",
+        "vscode-extension",
+        ".git",
+        "*.dll",
+        "**/*.dll",
+				"venv"
+  ],
+	"python.venvPath": [
 		"venv",
-		".pyenv",
-		".direnv"
+		"./venv"
 	],
-	"python.pythonPath": "./venv/bin/python",
+	"python.formatting.provider": "yapf",
+	"python.formatting.yapfPath": "/usr/local/bin/yapf",
+	"python.linting.pylintEnabled": true,
+	"python.linting.pylintPath": "/usr/local/bin/pylint",
 	"rainbow-fart.enabled":true,
 	"rainbow-fart.ffplay": "/usr/local/bin/ffplay"
 }

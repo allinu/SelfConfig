@@ -379,7 +379,7 @@ c.NotebookApp.local_hostnames = ['localhost']
 
 ## 用于笔记本和内核的目录。
 #  Default: ''
-c.NotebookApp.notebook_dir = '/Users/liona/Workspace/Jupyter'
+c.NotebookApp.notebook_dir = '/Volumes/Data/WorkSpace/Jupyter'
 
 ## Whether to open in a browser after starting. The specific browser used is
 #  platform dependent and determined by the python standard library `webbrowser`

@@ -8,6 +8,10 @@ export PATH="$HOME/.go/bin:$PATH"
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
+export CPPFLAGS="-I/usr/local/opt/openjdk/include"
+export PATH="/usr/local/sbin:$PATH"
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/liona/.oh-my-zsh"
@@ -25,7 +29,7 @@ export GOPROXY="https://goproxy.cn"
 export RUSTUP_DIST_SERVER=https://mirrors.tuna.tsinghua.edu.cn/rustup
 
 # config proxy
-export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
+# export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
 
 
 # Set list of themes to pick from when loading at random
@@ -117,7 +121,6 @@ source $ZSH/oh-my-zsh.sh
 #fi
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
-
 #compdef _gh gh
 
 # zsh completion for gh                                   -*- shell-script -*-
@@ -138,7 +141,7 @@ _gh()
     local shellCompDirectiveFilterFileExt=8
     local shellCompDirectiveFilterDirs=16
 
-    local lastParam lastChar flagPrefix requestComp out directive compCount comp lastComp
+    local lastParam lastChar flagPrefix requestComp out directive comp lastComp noSpace
     local -a completions
 
     __gh_debug "\n========= starting completion logic =========="
@@ -206,7 +209,6 @@ _gh()
         return
     fi
 
-    compCount=0
     while IFS='\n' read -r comp; do
         if [ -n "$comp" ]; then
             # If requested, completions are returned with a description.
@@ -218,12 +220,16 @@ _gh()
             local tab=$(printf '\t')
             comp=${comp//$tab/:}
 
-            ((compCount++))
             __gh_debug "Adding completion: ${comp}"
             completions+=${comp}
             lastComp=$comp
         fi
     done < <(printf "%s\n" "${out[@]}")
+
+    if [ $((directive & shellCompDirectiveNoSpace)) -ne 0 ]; then
+        __gh_debug "Activating nospace."
+        noSpace="-S ''"
+    fi
 
     if [ $((directive & shellCompDirectiveFilterFileExt)) -ne 0 ]; then
         # File extension filtering
@@ -251,25 +257,40 @@ _gh()
             __gh_debug "Listing directories in ."
         fi
 
+        local result
         _arguments '*:dirname:_files -/'" ${flagPrefix}"
+        result=$?
         if [ -n "$subdir" ]; then
             popd >/dev/null 2>&1
         fi
-    elif [ $((directive & shellCompDirectiveNoSpace)) -ne 0 ] && [ ${compCount} -eq 1 ]; then
-        __gh_debug "Activating nospace."
-        # We can use compadd here as there is no description when
-        # there is only one completion.
-        compadd -S '' "${lastComp}"
-    elif [ ${compCount} -eq 0 ]; then
-        if [ $((directive & shellCompDirectiveNoFileComp)) -ne 0 ]; then
-            __gh_debug "deactivating file completion"
-        else
-            # Perform file completion
-            __gh_debug "activating file completion"
-            _arguments '*:filename:_files'" ${flagPrefix}"
-        fi
+        return $result
     else
-        _describe "completions" completions $(echo $flagPrefix)
+        __gh_debug "Calling _describe"
+        if eval _describe "completions" completions $flagPrefix $noSpace; then
+            __gh_debug "_describe found some completions"
+
+            # Return the success of having called _describe
+            return 0
+        else
+            __gh_debug "_describe did not find completions."
+            __gh_debug "Checking if we should do file completion."
+            if [ $((directive & shellCompDirectiveNoFileComp)) -ne 0 ]; then
+                __gh_debug "deactivating file completion"
+
+                # We must return an error code here to let zsh know that there were no
+                # completions found by _describe; this is what will trigger other
+                # matching algorithms to attempt to find completions.
+                # For example zsh can match letters in the middle of words.
+                return 1
+            else
+                # Perform file completion
+                __gh_debug "Activating file completion"
+
+                # We must return the result of this command, so it must be the
+                # last command, or else we must store its result to return it.
+                _arguments '*:filename:_files'" ${flagPrefix}"
+            fi
+        fi
     fi
 }
 
@@ -277,6 +298,8 @@ _gh()
 if [ "$funcstack[1]" = "_gh" ]; then
 	_gh
 fi
+
+#compdef _gh gh
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -296,3 +319,6 @@ alias top="bpytop"
 alias cat="bat"
 alias python="python3"
 alias pip="pip3"
+alias redis\-server="redis-server /usr/local/etc/redis.conf"
+
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh

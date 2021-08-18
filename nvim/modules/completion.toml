@@ -29,7 +29,7 @@ hook_add = '''
 		\ 'coc-react-refactor',
 		\ 'coc-css',
 		\ 'coc-vetur',
-		\ 'coc-python',
+		\ 'coc-pyright',
 		\ 'coc-html',
 		\ 'coc-rainbow-fart',
 		\]

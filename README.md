@@ -12,12 +12,37 @@
 
 ![](https://i0.hdslb.com/bfs/album/b825cde4f4769fe5a08774ad194a6434ed0d2dcb.png)
 
+4. `Sublime Text`终端打开
+
+```shell
+	ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
+```
+
+5. 安装 Homebrew 
+
+   ```shell
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   ```
+
+   更换Homebrew的源
+
+   ```shell
+   cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
+   git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
+   ```
+
+   
+
+
+
+
+
 
 
 ## 自动启动项设置
 
 	Library/LaunchAgents/*： 为开机启动项将其拷贝至~/ 对应的目录下
-	
+
 
 	```shell
 	# 修改文件权限 这里给出的是 aria2 的，其他的大体一致，需要改名字
