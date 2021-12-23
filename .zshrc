@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH="/usr/local/opt/node@14/bin:$PATH"
+export PATH="/usr/local/opt/node@16/bin:$PATH"
 export PATH="/Users/liona/Library/Python/3.9/bin:$PATH"
 export PATH="/usr/local/opt/go@1.15/bin:$PATH"
 export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
@@ -12,6 +12,7 @@ export PATH="/usr/local/opt/openjdk/bin:$PATH"
 export CPPFLAGS="-I/usr/local/opt/openjdk/include"
 export PATH="/usr/local/sbin:$PATH"
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
+export HOMEBREW_NO_ENV_HINTS=1
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/liona/.oh-my-zsh"
@@ -30,6 +31,7 @@ export RUSTUP_DIST_SERVER=https://mirrors.tuna.tsinghua.edu.cn/rustup
 
 # config proxy
 # export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
+# export https_proxy=socks5://127.0.0.1:1086 http_proxy=socks5://127.0.0.1:1086 all_proxy=socks5://127.0.0.1:1086
 
 
 # Set list of themes to pick from when loading at random

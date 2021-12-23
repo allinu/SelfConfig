@@ -11,9 +11,8 @@
         <string>Jupyter_notebook</string>
         <key>ProgramArguments</key>
         <array>
-						<string>/usr/local/bin/jupyter-notebook</string>
-						<string>--config</string>
-						<string>"/Users/liona/.jupyter/jupyter_notebook_config.py"</string>
+						<string>/usr/local/bin/jupyter-lab</string>
+						<string>--no-browser</string>
 				</array>
 				<key>RunAtLoad</key>
 				<true/>
