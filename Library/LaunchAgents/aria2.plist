@@ -11,7 +11,7 @@
         <string>aria2</string>
         <key>ProgramArguments</key>
         <array>
-            <string>/usr/local/bin/aria2c</string>
+            <string>/opt/homebrew/bin/aria2c</string>
 						<string>--conf-path</string>
 						<string>/Users/liona/.aria2/aria2.conf</string>
 				</array>

@@ -1,12 +1,19 @@
-https://media-tjbh-person.tjoss.xstore.ctyun.cn/PERSONCLOUD/c1bc56dc-6ca3-4665-8a40-f623cceaeb66.dmg?x-amz-CLIENTTYPEIN=UNKNOWN&AWSAccessKeyId=B12spNbFIkHcJjk5MvKN&x-amz-UID=779465094&x-amz-APPID=828221&response-content-disposition=attachment%3Bfilename%3D%22Microsoft_Office_2021_16.50_Preview_LTSC_VL__macwk.com.dmg%22&x-amz-CLIENTNETWORK=UNKNOWN&x-amz-CLOUDTYPEIN=PERSON&x-amz-limit=rate%3D10240%2Cconcurrency%3D10&Signature=mXKOtIN7sybWplQF9kjutbq3%2BIk%3D&x-amz-SHID=169753620&Expires=1629100189&x-amz-FSIZE=1940159561&x-amz-UFID=21411113683268310	
- gid=992996351b3652d7
+https://objects.githubusercontent.com/github-production-release-asset-2e65be/302603001/01868dcd-8c7a-4ad2-8dd3-7e20598c2e22?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20220108%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220108T061836Z&X-Amz-Expires=300&X-Amz-Signature=690e778f2ab4b3d04112e6837185a750e79ad9d1e19f77b2bf847f561fc7a8bc&X-Amz-SignedHeaders=host&actor_id=32992109&key_id=0&repo_id=302603001&response-content-disposition=attachment%3B%20filename%3DYesPlayMusic-mac-0.4.3-arm64.dmg&response-content-type=application%2Foctet-stream	
+ gid=adbb96bf8e73a32f
+ out=YesPlayMusic-mac-0.4.3-arm64.dmg
+ referer=https://github.com/qier222/YesPlayMusic/releases
+ always-resume=true
+ header=User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36
+ header=Connection: keep-alive
+https://objects.githubusercontent.com/github-production-release-asset-2e65be/302603001/01868dcd-8c7a-4ad2-8dd3-7e20598c2e22?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20220108%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220108T061836Z&X-Amz-Expires=300&X-Amz-Signature=690e778f2ab4b3d04112e6837185a750e79ad9d1e19f77b2bf847f561fc7a8bc&X-Amz-SignedHeaders=host&actor_id=32992109&key_id=0&repo_id=302603001&response-content-disposition=attachment%3B%20filename%3DYesPlayMusic-mac-0.4.3-arm64.dmg&response-content-type=application%2Foctet-stream	
+ gid=95de4d2c140b38b0
  timeout=10
  connect-timeout=10
  max-tries=0
- dir=/Volumes/Data/Downloads/
- out=Microsoft_Office_2021_16.50_Preview_LTSC_VL__macwk.com.dmg
+ dir=/Users/liona/Downloads/
+ out=YesPlayMusic-mac-0.4.3-arm64.dmg
  split=64
- referer=
+ referer=https://github.com/qier222/YesPlayMusic/releases
  lowest-speed-limit=0
  piece-length=1048576
  max-download-limit=0
@@ -27,7 +34,7 @@ https://media-tjbh-person.tjoss.xstore.ctyun.cn/PERSONCLOUD/c1bc56dc-6ca3-4665-8
  dry-run=false
  reuse-uri=false
  remove-control-file=false
- always-resume=false
+ always-resume=true
  max-resume-failure-tries=0
  max-connection-per-server=16
  min-split-size=4194304
@@ -46,8 +53,7 @@ https://media-tjbh-person.tjoss.xstore.ctyun.cn/PERSONCLOUD/c1bc56dc-6ca3-4665-8
  user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 Edg/87.0.664.57
  enable-http-keep-alive=true
  enable-http-pipelining=false
- header=Cookie:
- header=User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36
+ header=User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36
  header=Connection: keep-alive
  use-head=false
  http-auth-challenge=false
@@ -82,12 +88,3 @@ https://media-tjbh-person.tjoss.xstore.ctyun.cn/PERSONCLOUD/c1bc56dc-6ca3-4665-8
  follow-metalink=true
  metalink-preferred-protocol=none
  metalink-enable-unique-protocol=true
-https://media-tjbh-person.tjoss.xstore.ctyun.cn/PERSONCLOUD/c1bc56dc-6ca3-4665-8a40-f623cceaeb66.dmg?x-amz-CLIENTTYPEIN=UNKNOWN&AWSAccessKeyId=B12spNbFIkHcJjk5MvKN&x-amz-UID=779465094&x-amz-APPID=828221&response-content-disposition=attachment%3Bfilename%3D%22Microsoft_Office_2021_16.50_Preview_LTSC_VL__macwk.com.dmg%22&x-amz-CLIENTNETWORK=UNKNOWN&x-amz-CLOUDTYPEIN=PERSON&x-amz-limit=rate%3D10240%2Cconcurrency%3D10&Signature=mXKOtIN7sybWplQF9kjutbq3%2BIk%3D&x-amz-SHID=169753620&Expires=1629100189&x-amz-FSIZE=1940159561&x-amz-UFID=21411113683268310	
- gid=7b08c708a639350b
- out=Microsoft_Office_2021_16.50_Preview_LTSC_VL__macwk.com.dmg
- referer=
- header=Cookie:
- header=User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36
- header=Connection: keep-alive
-https://objects.githubusercontent.com/github-production-release-asset-2e65be/101138315/b82a3d00-b117-4252-85c7-9d9e26a07171?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20211215%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20211215T053236Z&X-Amz-Expires=300&X-Amz-Signature=dfe4335debd363ff04dbb9b390d0a1b69eca26675b72fbee7258d30f30dc9961&X-Amz-SignedHeaders=host&actor_id=32992109&key_id=0&repo_id=101138315&response-content-disposition=attachment%3B%20filename%3Dd2l-zh-2.0.0beta0.pdf&response-content-type=application%2Foctet-stream	
- gid=d375aa1893c0d4b2

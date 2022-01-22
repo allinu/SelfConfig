@@ -1,7 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="/usr/local/opt/node@16/bin:$PATH"
-export PATH="/Users/liona/Library/Python/3.9/bin:$PATH"
+export PATH="/Users/liona/Library/Python/3.8/bin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/usr/local/opt/go@1.15/bin:$PATH"
 export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
 export PATH="$HOME/.go/bin:$PATH"
@@ -123,6 +124,7 @@ source $ZSH/oh-my-zsh.sh
 #fi
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
+
 #compdef _gh gh
 
 # zsh completion for gh                                   -*- shell-script -*-
@@ -250,7 +252,7 @@ _gh()
         _arguments '*:filename:'"$filteringCmd"
     elif [ $((directive & shellCompDirectiveFilterDirs)) -ne 0 ]; then
         # File completion for directories only
-        local subDir
+        local subdir
         subdir="${completions[1]}"
         if [ -n "$subdir" ]; then
             __gh_debug "Listing directories in $subdir"
@@ -298,10 +300,9 @@ _gh()
 
 # don't run the completion function when being source-ed or eval-ed
 if [ "$funcstack[1]" = "_gh" ]; then
-	_gh
+    _gh
 fi
 
-#compdef _gh gh
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -311,7 +312,6 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
 
 alias ls="lsd"
 alias ll="ls -l"
@@ -323,4 +323,4 @@ alias python="python3"
 alias pip="pip3"
 alias redis\-server="redis-server /usr/local/etc/redis.conf"
 
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh

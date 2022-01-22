@@ -9,7 +9,7 @@ patch:
   # 皮肤主题 
   preset_color_schemes:
     liona:
-      name: "Alion／Liona"
+      name: Liona
       author: "Liona <lionacc@163.com>"   # 作者信息
       color_space: display_p3                 # Only available on macOS 10.12+
       back_color: 0xFFFFFF                    # 候选条背景色，24位色值，16进制，BGR顺序
@@ -29,8 +29,8 @@ patch:
       candidate_format: "%c %@ "   # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间的。
       font_face: "Smartisan Compact CNS bold"      # 候选词字体
       font_point: 15                          # 候选文字大小
-      label_font_point: 13                    # 候选编号大小
       label_font_face: "FiraCode Nerd Font" # 候选词编号字体
+      label_font_point: 13                    # 候选编号大小
       corner_radius: 6                        # 候选条圆角
       hilited_corner_radius: 5                # 高亮圆角
       border_height: 0                        # 窗口边界高度，大于圆角半径才生效
@@ -38,7 +38,7 @@ patch:
       border_color_width: 0
 
     liona_dark:
-      name: "Alion Dark／Liona"
+      name: Liona_Dark
       author: "Liona <lionacc@163.com>"   # 作者信息
       color_space: display_p3                 # Only available on macOS 10.12+
       back_color: 0x000000                    # 候选条背景色，24位色值，16进制，BGR顺序
@@ -58,8 +58,8 @@ patch:
       candidate_format: "%c %@ "   # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间的。
       font_face: "Smartisan Compact CNS bold"      # 候选词字体
       font_point: 15                          # 候选文字大小
-      label_font_point: 15                    # 候选编号大小
       label_font_face: "FiraCode Nerd Font" # 候选词编号字体
+      label_font_point: 15                    # 候选编号大小
       corner_radius: 6                        # 候选条圆角
       hilited_corner_radius: 0                # 高亮圆角
       border_height: 0                        # 窗口边界高度，大于圆角半径才生效
@@ -76,22 +76,51 @@ patch:
       ascii_mode: true
     com.microsoft.VSCode:           # Visual Studio Code
       ascii_mode: false           # 开启中文输入
-      ascii_punct: true           # 半角符号即中文状态输入英文标点
-    com.googlecode.iterm2:
+      # ascii_punct: true         # 半角符号即中文状态输入英文标点
+      no_inline: true
+    com.googlecode.iterm2: # iterm2
       ascii_mode: true
       ascii_punct: true
-    com.apple.Terminal:
+    com.apple.Terminal: # macOS terminal
       ascii_mode: true
       ascii_punct: true           # 半角符号即中文状态输入英文标点
       no_inline: true
-    com.google.Chrome:
+    com.google.Chrome: # google Chrome
       # 規避 https://github.com/rime/squirrel/issues/435
       inline: true
-    ru.keepcoder.Telegram:
+    ru.keepcoder.Telegram: # telegram
       # 規避 https://github.com/rime/squirrel/issues/475
       inline: true
-    net.kovidgoyal.kitty:
+    net.kovidgoyal.kitty: # kitty terminal
       ascii_mode: true
+      no_inline: true
+    com.kapeli.dashdoc: # Dash Doc
+      ascii_mode: true
+    org.jkiss.dbeaver.core.product: # Dbeaver
+      ascii_mode: true
+      no_inline: true
+    com.sublimetext.4: # sublimetext 4
+      ascii_mode: true
+      no_inline: true
+    com.sublimetext.3: # sublimetext 3
+      ascii_mode: true
+      no_inline: true
+    com.adobe.Photoshop: # PS
+      ascii_mode: true
+      no_inline: true
+    com.jetbrains.pycharm: # pycharm
+      ascii_mode: true
+      no_inline: true
+    com.apple.dt.Xcode: # xcode
+      ascii_mode: true
+      no_inline: true
+    notion.id: # Notion
+      ascii_mode: true
+      no_inline: true
+    com.microsoft.Word:
+      ascii_mode: true
+      no_inline: true
+
 
 
 

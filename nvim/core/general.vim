@@ -286,7 +286,7 @@ endif
 
 " vim: set foldmethod=marker ts=2 sw=2 tw=80 noet :
 
-autocmd BufWritePre *.markdown,*.md,*.text,*.txt,*.wiki,*.cnx call PanGuSpacing()
+" autocmd BufWritePre *.markdown,*.md,*.text,*.txt,*.wiki,*.cnx call PanGuSpacing()
 
 
 " Note: Make sure the function is defined before `vim-buffet` is loaded.

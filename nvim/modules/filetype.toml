@@ -60,3 +60,10 @@ on_ft = ['html', 'js','css']
 hook_source = '''
 		let g:bracey_browser_command = "open"
 '''
+
+[[plugins]]
+repo = 'hotoo/pangu.vim'
+on_ft = ['markdown', 'md', 'text', 'txt', 'wiki', 'cnx']
+hook_add = '''
+	autocmd BufWritePre *.markdown,*.md,*.text,*.txt,*.wiki,*.cnx call PanGuSpacing()
+'''
