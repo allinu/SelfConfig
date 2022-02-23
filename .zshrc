@@ -9,6 +9,7 @@ export PATH="$HOME/.go/bin:$PATH"
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
+export PATH="/opt/homebrew/sbin:$PATH"
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
 export CPPFLAGS="-I/usr/local/opt/openjdk/include"
 export PATH="/usr/local/sbin:$PATH"
@@ -23,6 +24,8 @@ export ZSH="/Users/liona/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#ff0,bg=#0d0f14,bold,underline"
+
 export ZSH_DISABLE_COMPFIX=true
 export EDITOR='nvim'
 export GO111MODULE="on"
@@ -99,6 +102,16 @@ plugins=(
 	git
 	yarn
 	docker
+	history
+	history-substring-search
+	autojump
+	brew
+	gh
+	vi-mode
+	fzf
+	zsh-autosuggestions
+	tmuxinator
+	zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -324,3 +337,21 @@ alias pip="pip3"
 alias redis\-server="redis-server /usr/local/etc/redis.conf"
 
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/opt/homebrew/Caskroom/miniforge/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/opt/homebrew/Caskroom/miniforge/base/etc/profile.d/conda.sh" ]; then
+        . "/opt/homebrew/Caskroom/miniforge/base/etc/profile.d/conda.sh"
+    else
+        export PATH="/opt/homebrew/Caskroom/miniforge/base/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
