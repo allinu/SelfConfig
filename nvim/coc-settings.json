@@ -35,7 +35,6 @@
 		"default": "\uf29c"
 	},
 	//diagnostic
-	"diagnostic.signOffset": 9999999,
 	"diagnostic.errorSign": " ",
 	"diagnostic.warningSign": " ",
 	"diagnostic.infoSign": " ",
@@ -82,19 +81,6 @@
 		"python",
 		"json"
 	],
-	"prettier.statusItemText": "ⓟ ",
-	"prettier.eslintIntegration": true,
-	"prettier.tslintIntegration": false,
-	"prettier.stylelintIntegration": true,
-	"prettier.disableSuccessMessage": true,
-	//emmet
-	"emmet.includeLanguages": {
-		"vue-html": "html",
-		"javascript": "javascriptreact",
-		"typescriptreact": "typescriptreact"
-	},
-	//imselect
-	"imselect.enableStatusItem": false,
 	//multiple curssor
 	"cursors.nextKey": "<C-n>",
 	"cursors.previousKey": "<C-p>",
@@ -110,15 +96,6 @@
 	"explorer.floating.width": -20,
 	"explorer.floating.height": -10,
 	"explorer.openAction.strategy": "sourceWindow",
-	// eslint
-	"eslint.filetypes": [
-		"javascript",
-		"javascriptreact",
-		"typescript",
-		"typescriptreact"
-	],
-	"eslint.autoFix": true,
-	"eslint.autoFixOnSave": true,
 	// coc-actions
 	"coc-actions.hideCursor": false,
 	// Cspell
@@ -169,14 +146,13 @@
         "**/*.dll",
 				"venv"
   ],
-	"python.venvPath": [
-		"venv",
-		"./venv"
-	],
+	"python.venvPath": "./venv/",
 	"python.formatting.provider": "yapf",
-	"python.formatting.yapfPath": "./venv/bin/yapf",
+	"python.formatting.yapfPath": "/opt/homebrew/bin/yapf",
 	"python.linting.pylintEnabled": true,
-	"python.linting.pylintPath": "./venv/bin/pylint",
+	"python.linting.pylintPath": "/opt/homebrew/bin/pylint",
+	"python.sortImports.path": "/opt/homebrew/bin/isort",
+	"pyright.organizeimports.provider": "isort",
 	"rainbow-fart.enabled":true,
 	"rainbow-fart.ffplay": "/usr/local/bin/ffplay"
 }
