@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH="/usr/local/opt/node@16/bin:$PATH"
+export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
 export PATH="/Users/liona/Library/Python/3.8/bin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/usr/local/opt/go@1.15/bin:$PATH"
@@ -15,6 +15,11 @@ export CPPFLAGS="-I/usr/local/opt/openjdk/include"
 export PATH="/usr/local/sbin:$PATH"
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
 export HOMEBREW_NO_ENV_HINTS=1
+
+export GPG_TTY=$(tty)
+
+export LDFLAGS="-L/opt/homebrew/opt/node@16/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/node@16/include"
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/liona/.oh-my-zsh"
