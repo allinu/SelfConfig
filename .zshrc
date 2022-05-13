@@ -17,9 +17,11 @@ export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
 export HOMEBREW_NO_ENV_HINTS=1
 
 export GPG_TTY=$(tty)
-
 export LDFLAGS="-L/opt/homebrew/opt/node@16/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/node@16/include"
+
+export WECHALLUSER="Liona"
+export WECHALLTOKEN="03A18-15FCC-4DF9D-2217F-F0529-50DE4"
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/liona/.oh-my-zsh"
@@ -29,7 +31,7 @@ export ZSH="/Users/liona/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#ff0,bg=#0d0f14,bold,underline"
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#d1dede,bg=#0d0f14,underline"
 
 export ZSH_DISABLE_COMPFIX=true
 export EDITOR='nvim'
@@ -340,6 +342,7 @@ alias cat="bat"
 alias python="python3"
 alias pip="pip3"
 alias redis\-server="redis-server /usr/local/etc/redis.conf"
+alias ssh="kitty +kitten ssh"
 
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 
@@ -358,5 +361,7 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
+# export LC_ALL=en_US.UTF-8
+# export LANG=en_US.UTF-8
+export LC_ALL=zh_CN.UTF-8
+export LANG=zh_CN.UTF-8

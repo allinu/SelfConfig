@@ -11,7 +11,7 @@
         <string>Jupyter_notebook</string>
         <key>ProgramArguments</key>
         <array>
-						<string>/usr/local/bin/jupyter-lab</string>
+						<string>/opt/homebrew/Caskroom/miniforge/base/bin/jupyter</string>
 						<string>--no-browser</string>
 				</array>
 				<key>RunAtLoad</key>
