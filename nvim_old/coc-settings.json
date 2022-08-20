@@ -147,12 +147,13 @@
 				"venv"
   ],
 	"python.venvPath": "./venv/",
+	"python.pythonPath": "./venv/bin/python",
 	"python.formatting.provider": "yapf",
-	"python.formatting.yapfPath": "/opt/homebrew/bin/yapf",
+	"python.formatting.yapfPath": "/Users/liona/.local/bin/yapf",
 	"python.linting.pylintEnabled": true,
-	"python.linting.pylintPath": "/opt/homebrew/bin/pylint",
-	"python.sortImports.path": "/opt/homebrew/bin/isort",
+	"python.linting.pylintPath": "/Users/liona/.local/bin/pylint",
+	"python.sortImports.path": "/Users/liona/.local/bin/isort",
 	"pyright.organizeimports.provider": "isort",
 	"rainbow-fart.enabled":true,
-	"rainbow-fart.ffplay": "/usr/local/bin/ffplay"
+	"rainbow-fart.ffplay": "/opt/homebrew/bin/ffplay"
 }

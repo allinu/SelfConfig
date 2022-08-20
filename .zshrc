@@ -4,7 +4,7 @@ export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
 export PATH="/Users/liona/Library/Python/3.8/bin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/usr/local/opt/go@1.15/bin:$PATH"
-export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
+export PATH="/usr/local/opt/openjdk@12/bin:$PATH"
 export PATH="$HOME/.go/bin:$PATH"
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -13,6 +13,7 @@ export PATH="/opt/homebrew/sbin:$PATH"
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
 export CPPFLAGS="-I/usr/local/opt/openjdk/include"
 export PATH="/usr/local/sbin:$PATH"
+export PATH="/Users/liona/.local/bin:$PATH"
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
 export HOMEBREW_NO_ENV_HINTS=1
 
@@ -39,6 +40,7 @@ export GO111MODULE="on"
 export GOPROXY="https://goproxy.cn"
 
 export RUSTUP_DIST_SERVER=https://mirrors.tuna.tsinghua.edu.cn/rustup
+export DISABLE_AUTO_TITLE=true
 
 # config proxy
 # export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
@@ -116,8 +118,9 @@ plugins=(
 	gh
 	vi-mode
 	fzf
-	zsh-autosuggestions
+#	zsh-autosuggestions
 	tmuxinator
+	tmux
 	zsh-syntax-highlighting
 )
 
