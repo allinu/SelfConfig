@@ -45,6 +45,7 @@ export DISABLE_AUTO_TITLE=true
 # config proxy
 # export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
 # export https_proxy=socks5://127.0.0.1:1086 http_proxy=socks5://127.0.0.1:1086 all_proxy=socks5://127.0.0.1:1086
+# export https_proxy=http://127.0.0.1:6152;export http_proxy=http://127.0.0.1:6152;export all_proxy=socks5://127.0.0.1:6153
 
 
 # Set list of themes to pick from when loading at random
@@ -122,6 +123,8 @@ plugins=(
 	tmuxinator
 	tmux
 	zsh-syntax-highlighting
+  node
+  npm
 )
 
 source $ZSH/oh-my-zsh.sh

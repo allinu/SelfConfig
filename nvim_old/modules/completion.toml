@@ -65,3 +65,7 @@ repo = 'honza/vim-snippets'
 depends = 'coc.nvim'
 if = 'has("python3")'
 merged =  0
+
+[[plugins]]
+repo = "github/copilot.vim"
+

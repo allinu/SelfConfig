@@ -1,0 +1,129 @@
+patch:
+  show_notifications_when: appropriate # 状态通知，可设为全开（always）全关（never）  
+
+  # 修改后面的名字更换皮肤
+  style:
+    color_scheme: liona     # macOS亮色
+    color_scheme_dark: liona_dark
+
+  # 皮肤主题 
+  preset_color_schemes:
+    liona:
+      name: Liona
+      author: "Liona <lionacc@163.com>"   # 作者信息
+      color_space: display_p3                 # Only available on macOS 10.12+
+      back_color: 0xFFFFFF                    # 候选条背景色，24位色值，16进制，BGR顺序
+      border_color: 0xFFFFFF                  # 边框色
+      candidate_text_color: 0x333333          # 预选项文字颜色
+      comment_text_color: 0x333333            # 拼音等提示文字颜色
+      hilited_back_color: 0xFFFFFF            # 第一候选项背景背景色
+      hilited_candidate_text_color: 0x0000FF  # 第一候选项文字颜色
+      hilited_candidate_label_color: 0x0000FF # 第一候选项编号颜色
+      hilited_comment_text_color: 0x000000    # 注解文字高亮
+      hilited_text_color: 0x5353FF            # 高亮拼音 (需要开启内嵌编码)
+      text_color: 0x000000                    # 拼音行文字颜色
+      label_color: 0x000000                   # 预选栏编号颜色
+      horizontal: true                        # 水平排列
+      inline_preedit: true                    # 单行显示，false双行显示
+      # candidate_format: "\uf444 %@ \u2005"   # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间的。
+      candidate_format: "%c %@ "   # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间的。
+      font_face: "Smartisan Compact CNS bold"      # 候选词字体
+      font_point: 15                          # 候选文字大小
+      label_font_face: "FiraCode Nerd Font" # 候选词编号字体
+      label_font_point: 13                    # 候选编号大小
+      corner_radius: 6                        # 候选条圆角
+      hilited_corner_radius: 5                # 高亮圆角
+      border_height: 0                        # 窗口边界高度，大于圆角半径才生效
+      border_width: 0                         # 窗口边界宽度，大于圆角半径才生效
+      border_color_width: 0
+
+    liona_dark:
+      name: Liona_Dark
+      author: "Liona <lionacc@163.com>"   # 作者信息
+      color_space: display_p3                 # Only available on macOS 10.12+
+      back_color: 0x000000                    # 候选条背景色，24位色值，16进制，BGR顺序
+      border_color: 0xFFFFFF                  # 边框色
+      candidate_text_color: 0xeeeeee          # 预选项文字颜色
+      comment_text_color: 0x999999            # 拼音等提示文字颜色
+      hilited_back_color: 0x000000            # 第一候选项背景背景色
+      hilited_candidate_text_color: 0x5353FF  # 第一候选项文字颜色
+      hilited_candidate_label_color: 0x5353FF # 第一候选项编号颜色
+      hilited_comment_text_color: 0x999999    # 注解文字高亮
+      hilited_text_color: 0x5353FF            # 高亮拼音 (需要开启内嵌编码)
+      text_color: 0x5353FF                    # 拼音行文字颜色
+      label_color: 0xFFFFFF                   # 预选栏编号颜色
+      horizontal: true                        # 水平排列
+      inline_preedit: true                    # 单行显示，false双行显示
+      # candidate_format: "\uf444 %@ \u2005"   # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间的。
+      candidate_format: "%c %@ "   # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间的。
+      font_face: "Smartisan Compact CNS bold"      # 候选词字体
+      font_point: 15                          # 候选文字大小
+      label_font_face: "FiraCode Nerd Font" # 候选词编号字体
+      label_font_point: 15                    # 候选编号大小
+      corner_radius: 6                        # 候选条圆角
+      hilited_corner_radius: 0                # 高亮圆角
+      border_height: 0                        # 窗口边界高度，大于圆角半径才生效
+      border_width: 0                         # 窗口边界宽度，大于圆角半径才生效
+      border_color_width: 0
+
+# 更多皮肤请参考：https://github.com/rime/squirrel/blob/69112996441fdae1d1778ac9a32eb98f6a8e7841/data/squirrel.yaml
+# 皮肤效果请参考：https://github.com/liuour/rime-pifu
+
+  app_options:    # App关闭中文输入
+    com.apple.Spotlight:            # 聚焦搜索
+      ascii_mode: true
+    com.runningwithcrayons.Alfred:  # alfred
+      ascii_mode: true
+    com.microsoft.VSCode:           # Visual Studio Code
+      ascii_mode: false           # 开启中文输入
+      # ascii_punct: true         # 半角符号即中文状态输入英文标点
+      no_inline: true
+    com.googlecode.iterm2: # iterm2
+      ascii_mode: true
+      ascii_punct: true
+    com.apple.Terminal: # macOS terminal
+      ascii_mode: true
+      ascii_punct: true           # 半角符号即中文状态输入英文标点
+      no_inline: true
+    com.google.Chrome: # google Chrome
+      # 規避 https://github.com/rime/squirrel/issues/435
+      inline: true
+    ru.keepcoder.Telegram: # telegram
+      # 規避 https://github.com/rime/squirrel/issues/475
+      inline: true
+    net.kovidgoyal.kitty: # kitty terminal
+      ascii_mode: true
+      no_inline: true
+    com.kapeli.dashdoc: # Dash Doc
+      ascii_mode: true
+    org.jkiss.dbeaver.core.product: # Dbeaver
+      ascii_mode: true
+      no_inline: true
+    com.sublimetext.4: # sublimetext 4
+      ascii_mode: true
+      no_inline: true
+    com.sublimetext.3: # sublimetext 3
+      ascii_mode: true
+      no_inline: true
+    com.adobe.Photoshop: # PS
+      ascii_mode: true
+      no_inline: true
+    com.jetbrains.pycharm: # pycharm
+      ascii_mode: true
+      no_inline: true
+    com.apple.dt.Xcode: # xcode
+      ascii_mode: true
+      no_inline: true
+    notion.id: # Notion
+      ascii_mode: true
+      no_inline: true
+    com.microsoft.Word:
+      ascii_mode: true
+      no_inline: true
+
+
+
+
+
+
+
