@@ -1,6 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
+export PATH="/opt/homebrew/opt/node@14/bin:$PATH"
 export PATH="/Users/liona/Library/Python/3.8/bin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/usr/local/opt/go@1.15/bin:$PATH"
@@ -20,6 +21,8 @@ export HOMEBREW_NO_ENV_HINTS=1
 export GPG_TTY=$(tty)
 export LDFLAGS="-L/opt/homebrew/opt/node@16/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/node@16/include"
+export LDFLAGS="-L/opt/homebrew/opt/node@14/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/node@14/include"
 
 export WECHALLUSER="Liona"
 export WECHALLTOKEN="03A18-15FCC-4DF9D-2217F-F0529-50DE4"
@@ -31,7 +34,7 @@ export ZSH="/Users/liona/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="liona"
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#d1dede,bg=#0d0f14,underline"
 
 export ZSH_DISABLE_COMPFIX=true
@@ -122,7 +125,6 @@ plugins=(
 #	zsh-autosuggestions
 	tmuxinator
 	tmux
-	zsh-syntax-highlighting
   node
   npm
 )
@@ -151,7 +153,7 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-#compdef _gh gh
+#compdef gh
 
 # zsh completion for gh                                   -*- shell-script -*-
 
@@ -239,7 +241,24 @@ _gh()
         return
     fi
 
+    local activeHelpMarker="_activeHelp_ "
+    local endIndex=${#activeHelpMarker}
+    local startIndex=$((${#activeHelpMarker}+1))
+    local hasActiveHelp=0
     while IFS='\n' read -r comp; do
+        # Check if this is an activeHelp statement (i.e., prefixed with $activeHelpMarker)
+        if [ "${comp[1,$endIndex]}" = "$activeHelpMarker" ];then
+            __gh_debug "ActiveHelp found: $comp"
+            comp="${comp[$startIndex,-1]}"
+            if [ -n "$comp" ]; then
+                compadd -x "${comp}"
+                __gh_debug "ActiveHelp will need delimiter"
+                hasActiveHelp=1
+            fi
+
+            continue
+        fi
+
         if [ -n "$comp" ]; then
             # If requested, completions are returned with a description.
             # The description is preceded by a TAB character.
@@ -247,7 +266,7 @@ _gh()
             # We first need to escape any : as part of the completion itself.
             comp=${comp//:/\\:}
 
-            local tab=$(printf '\t')
+            local tab="$(printf '\t')"
             comp=${comp//$tab/:}
 
             __gh_debug "Adding completion: ${comp}"
@@ -255,6 +274,17 @@ _gh()
             lastComp=$comp
         fi
     done < <(printf "%s\n" "${out[@]}")
+
+    # Add a delimiter after the activeHelp statements, but only if:
+    # - there are completions following the activeHelp statements, or
+    # - file completion will be performed (so there will be choices after the activeHelp)
+    if [ $hasActiveHelp -eq 1 ]; then
+        if [ ${#completions} -ne 0 ] || [ $((directive & shellCompDirectiveNoFileComp)) -eq 0 ]; then
+            __gh_debug "Adding activeHelp delimiter"
+            compadd -x "--"
+            hasActiveHelp=0
+        fi
+    fi
 
     if [ $((directive & shellCompDirectiveNoSpace)) -ne 0 ]; then
         __gh_debug "Activating nospace."
@@ -328,7 +358,6 @@ _gh()
 if [ "$funcstack[1]" = "_gh" ]; then
     _gh
 fi
-
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
