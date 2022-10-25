@@ -55,13 +55,6 @@ repo = 'ekalinin/Dockerfile.vim'
 on_ft = [ 'Dockerfile', 'docker-compose' ]
 
 [[plugins]]
-repo = 'turbio/bracey.vim'
-on_ft = ['html', 'js','css']
-hook_source = '''
-		let g:bracey_browser_command = "open"
-'''
-
-[[plugins]]
 repo = 'hotoo/pangu.vim'
 on_ft = ['markdown', 'md', 'text', 'txt', 'wiki', 'cnx']
 hook_add = '''
