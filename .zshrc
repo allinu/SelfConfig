@@ -1,19 +1,19 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
-export PATH="/opt/homebrew/opt/node@14/bin:$PATH"
-export PATH="/Users/liona/Library/Python/3.8/bin:$PATH"
-export PATH="/opt/homebrew/bin:$PATH"
-export PATH="/usr/local/opt/go@1.15/bin:$PATH"
-export PATH="/usr/local/opt/openjdk@12/bin:$PATH"
+export PATH="$HOME/bin:/usr/local/bin:$PATH"
 export PATH="$HOME/.go/bin:$PATH"
-export PATH="/usr/local/opt/llvm/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
+export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
+export PATH="/opt/homebrew/opt/node@14/bin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
+export PATH="/usr/local/opt/go@1.15/bin:$PATH"
+export PATH="/usr/local/opt/openjdk@12/bin:$PATH"
+export PATH="/usr/local/opt/llvm/bin:$PATH"
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
-export CPPFLAGS="-I/usr/local/opt/openjdk/include"
 export PATH="/usr/local/sbin:$PATH"
+export PATH="/Users/liona/Library/Python/3.9/bin:$PATH"
+export PATH="/Users/liona/.local/share/nvim/mason/bin:$PATH"
 export PATH="/Users/liona/.local/bin:$PATH"
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
 export HOMEBREW_NO_ENV_HINTS=1
@@ -23,6 +23,8 @@ export LDFLAGS="-L/opt/homebrew/opt/node@16/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/node@16/include"
 export LDFLAGS="-L/opt/homebrew/opt/node@14/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/node@14/include"
+export CPPFLAGS="-I/usr/local/opt/openjdk/include"
+
 
 export WECHALLUSER="Liona"
 export WECHALLTOKEN="03A18-15FCC-4DF9D-2217F-F0529-50DE4"
@@ -34,6 +36,7 @@ export ZSH="/Users/liona/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+# ZSH_THEME="liona"
 ZSH_THEME="liona"
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#d1dede,bg=#0d0f14,underline"
 
@@ -49,6 +52,16 @@ export DISABLE_AUTO_TITLE=true
 # export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
 # export https_proxy=socks5://127.0.0.1:1086 http_proxy=socks5://127.0.0.1:1086 all_proxy=socks5://127.0.0.1:1086
 # export https_proxy=http://127.0.0.1:6152;export http_proxy=http://127.0.0.1:6152;export all_proxy=socks5://127.0.0.1:6153
+
+# TMUX 
+## /etc/profile  
+export TERM=xterm-256color
+if [[ -z "$TMUX" ]] && [ "$TERM_PROGRAM" != "vscode" ]; then
+  tmux has 2> /dev/null || tmux new-session -s new_tmux && tmux attach
+or 
+  #test -z "$TMUX" && (tmux attach || tmux new-session)
+fi
+
 
 
 # Set list of themes to pick from when loading at random
@@ -377,7 +390,7 @@ alias cat="bat --theme Dracula"
 alias python="python3"
 alias pip="pip3"
 alias redis\-server="redis-server /usr/local/etc/redis.conf"
-alias ssh="kitty +kitten ssh"
+# alias ssh="kitty +kitten ssh"
 
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 
@@ -401,4 +414,3 @@ unset __conda_setup
 export LC_ALL=zh_CN.UTF-8
 export LANG=zh_CN.UTF-8
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

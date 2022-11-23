@@ -1,0 +1,6 @@
+[user]
+	name = Liona Maskros
+	email = lionacc@163.com
+	signingkey = 7B53502C2C33A6ED755C093A665673D61969768D
+[commit]
+	gpgsign = true

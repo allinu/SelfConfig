@@ -481,6 +481,12 @@ patch:
     com.adobe.Photoshop: # PS
       ascii_mode: true
       no_inline: true
+    com.jetbrains.WebStorm: # WebStorm
+      ascii_mode: true
+      no_inline: true
+    com.electron.master-desktop: # Master Go
+      ascii_mode: true
+      no_inline: true
     com.jetbrains.pycharm: # pycharm
       ascii_mode: true
       no_inline: true

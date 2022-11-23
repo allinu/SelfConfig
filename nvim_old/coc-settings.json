@@ -4,14 +4,14 @@
   "suggest.timeout": 500,
   "suggest.noselect": false,
   "suggest.detailField": "abbr",
-  "suggest.snippetIndicator": "  ",
+  "suggest.snippetIndicator": " ",
   "suggest.triggerCompletionWait": 50,
   "suggest.completionItemKindLabels": {
     "keyword": "\uf1de",
     "variable": "\ue79b",
     "value": "\uf89f",
     "operator": "\u03a8",
-    "function": "",
+    "function": "\u0192",
     "reference": "\ufa46",
     "constant": "\uf8fe",
     "method": "\uf09a",
@@ -37,13 +37,11 @@
   "diagnostic.errorSign": " ",
   "diagnostic.warningSign": " ",
   "diagnostic.infoSign": " ",
-  "diagnostic.hintSign": "𥉉",
-  "diagnostic.virtualTextPrefix": " ",
   "diagnostic.displayByAle": false,
   "diagnostic.refreshOnInsertMode": true,
   //git
   "git.enableGutters": true,
-  "git.branchCharacter": "שׂ ",
+  "git.branchCharacter": "\uf418",
   "git.addGBlameToBufferVar": true,
   "git.addGBlameToVirtualText": true,
   "git.virtualTextPrefix": " ",
@@ -55,15 +53,11 @@
   "git.addedSign.text": " ",
   "git.changedSign.text": " ",
   "git.removedSign.text": " ",
-  "git.topRemovedSign.text": " ",
-  "git.changeRemovedSign.text": " ",
+  "git.topRemovedSign.text": "  ",
+  "git.changeRemovedSign.text": "﫧",
   //CocList
-  "list.source.files.defaultOptions": [
-    "--auto-preview"
-  ],
-  "list.source.outline.defaultOptions": [
-    "--auto-preview"
-  ],
+  "list.source.files.defaultOptions": ["--auto-preview"],
+  "list.source.outline.defaultOptions": ["--auto-preview"],
   //prettier
   "coc.preferences.formatOnSaveFiletypes": [
     "html",
@@ -78,8 +72,7 @@
     "cpp",
     "vue",
     "python",
-    "json",
-    "vue"
+    "json"
   ],
   //multiple curssor
   "cursors.nextKey": "<C-n>",
@@ -166,6 +159,5 @@
   "pyright.organizeimports.provider": "isort",
   "rainbow-fart.enabled": true,
   "rainbow-fart.ffplay": "/opt/homebrew/bin/ffplay",
-  "snippets.ultisnips.pythonPrompt": false,
-  "Lua.telemetry.enable": true
+  "snippets.ultisnips.pythonPrompt": false
 }
