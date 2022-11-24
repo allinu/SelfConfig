@@ -58,7 +58,6 @@ export DISABLE_AUTO_TITLE=true
 export TERM=xterm-256color
 if [[ -z "$TMUX" ]] && [ "$TERM_PROGRAM" != "vscode" ]; then
   tmux has 2> /dev/null || tmux new-session -s new_tmux && tmux attach
-or 
   #test -z "$TMUX" && (tmux attach || tmux new-session)
 fi
 
