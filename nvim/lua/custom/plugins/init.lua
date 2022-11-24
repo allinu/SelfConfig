@@ -48,4 +48,6 @@ return {
   ['luochen1990/rainbow'] = {},
   ['psliwka/vim-smoothie'] = {},
   ['tpope/vim-surround'] = {},
+  ['majutsushi/tagbar'] = {},
+  ['sakshamgupta05/vim-todo-highlight'] = {},
 }

@@ -25,9 +25,9 @@ keyset("i", "<cr>", [[coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r
 keyset("i", "<c-j>", "<Plug>(coc-snippets-expand-jump)")
 keyset("i", "<c-space>", "coc#refresh()", {silent = true, expr = true})
 
-M.mundo = {
+M.tagbar = {
   n = {
-    ['<leader>m'] = {":MundoToggle<CR>", "show mundo tree"}
+    [',t'] = {':TagbarToggle<CR>', "show code tagbar"},
   }
 }
 
