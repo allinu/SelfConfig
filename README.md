@@ -6,7 +6,16 @@
 
 2. nvim 目录存放的是 Neovim 的配置文件，文件应该被还原到 `~/.config/nvim`
 
-<img width="1440" alt="image" src="https://user-images.githubusercontent.com/32992109/203581369-bb67c941-8254-4a00-a042-a85b0515e6a0.png">
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/32992109/203686101-fb35978f-9b81-4488-879e-a46a2a0ce324.png">
+
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/32992109/203686154-7041c368-6a95-43a0-85bc-66def3ba098f.png">
+
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/32992109/203686180-fb1ddea5-7989-4cae-9391-a046328c9cec.png">
+
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/32992109/203686261-cce5cad2-c840-40e5-b829-f9c26aa51b88.png">
+
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/32992109/203686292-84ffb8f0-6467-45f8-9d26-2b925f332d50.png">
+
 
 
 3. Rime 目录下存放的输入法配置文件，文件应该被还原到 `~/Library/Rime`
