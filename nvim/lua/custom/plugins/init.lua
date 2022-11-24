@@ -45,4 +45,7 @@ return {
   },
   ['rhysd/accelerated-jk'] = {},
   ['rcarriga/nvim-notify'] = {},
+  ['luochen1990/rainbow'] = {},
+  ['psliwka/vim-smoothie'] = {},
+  ['tpope/vim-surround'] = {},
 }

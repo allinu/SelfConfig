@@ -25,6 +25,12 @@ keyset("i", "<cr>", [[coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r
 keyset("i", "<c-j>", "<Plug>(coc-snippets-expand-jump)")
 keyset("i", "<c-space>", "coc#refresh()", {silent = true, expr = true})
 
+M.mundo = {
+  n = {
+    ['<leader>m'] = {":MundoToggle<CR>", "show mundo tree"}
+  }
+}
+
 M.coc = {
   n = {
     [',a'] = { ":<C-u>CocList diagnostics<cr>", "show diagnostics" },
