@@ -15,6 +15,12 @@ vim.opt.writebackup = false
 vim.opt.updatetime = 300
 vim.opt.signcolumn = "yes"
 
+vim.g.TWinSize = 20
+vim.g.displayRecentNum = 10
+vim.g.totalRecentNum = 100
+
+vim.cmd('highlight cursorline cterm=underline gui=underline')
+
 vim.g.todo_highlight_config = {
     TODO = {
         gui_fg_color = 'black',

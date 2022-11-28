@@ -1,3 +1,26 @@
+https://i.pximg.net/img-original/img/2020/05/27/16/07/02/81892005_p2.jpg	
+ gid=7555773831f97988
+ dir=Pixiv/
+ out=GTZ taejune/Kaguya and Kei_p2.jpg
+ referer=https://app-api.pixiv.net/
+ user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
+ all-proxy=http://127.0.0.1:7890/
+https://i.pximg.net/img-original/img/2020/05/04/00/30/06/81271375_p0.jpg	
+ gid=55fb0f0b3f31be16
+ dir=Pixiv/
+ out=GTZ taejune/Aerith_p0.jpg
+ referer=https://app-api.pixiv.net/
+ always-resume=true
+ user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
+ all-proxy=http://127.0.0.1:7890/
+https://i.pximg.net/img-original/img/2020/05/27/16/07/02/81892005_p1.jpg	
+ gid=0f12ab8aae1d39ca
+ dir=Pixiv/
+ out=GTZ taejune/Kaguya and Kei_p1.jpg
+ referer=https://app-api.pixiv.net/
+ always-resume=true
+ user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
+ all-proxy=http://127.0.0.1:7890/
 https://i.pximg.net/img-original/img/2020/05/23/08/22/12/81780541_p0.jpg	
  gid=012797c4fdc87d2d
  dir=Pixiv/
@@ -10,36 +33,7 @@ https://i.pximg.net/img-original/img/2020/05/27/16/07/02/81892005_p0.jpg
  dir=Pixiv/
  out=GTZ taejune/Kaguya and Kei_p0.jpg
  referer=https://app-api.pixiv.net/
- user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
- all-proxy=http://127.0.0.1:7890/
-https://i.pximg.net/img-original/img/2020/05/27/16/07/02/81892005_p2.jpg	
- gid=7555773831f97988
- dir=Pixiv/
- out=GTZ taejune/Kaguya and Kei_p2.jpg
- referer=https://app-api.pixiv.net/
- user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
- all-proxy=http://127.0.0.1:7890/
-https://i.pximg.net/img-original/img/2020/05/27/16/07/02/81892005_p1.jpg	
- gid=0f12ab8aae1d39ca
- dir=Pixiv/
- out=GTZ taejune/Kaguya and Kei_p1.jpg
- referer=https://app-api.pixiv.net/
  always-resume=true
- user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
- all-proxy=http://127.0.0.1:7890/
-https://i.pximg.net/img-original/img/2020/05/04/00/30/06/81271375_p0.jpg	
- gid=55fb0f0b3f31be16
- dir=Pixiv/
- out=GTZ taejune/Aerith_p0.jpg
- referer=https://app-api.pixiv.net/
- always-resume=true
- user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
- all-proxy=http://127.0.0.1:7890/
-https://i.pximg.net/img-original/img/2020/05/04/00/30/06/81271375_p1.jpg	
- gid=fabaf811eb3bd325
- dir=Pixiv/
- out=GTZ taejune/Aerith_p1.jpg
- referer=https://app-api.pixiv.net/
  user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
  all-proxy=http://127.0.0.1:7890/
 https://i.pximg.net/img-original/img/2020/03/01/09/13/10/79814660_p1.jpg	
@@ -50,11 +44,12 @@ https://i.pximg.net/img-original/img/2020/03/01/09/13/10/79814660_p1.jpg
  always-resume=true
  user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
  all-proxy=http://127.0.0.1:7890/
-https://i.pximg.net/img-original/img/2020/04/01/00/08/12/80481750_p0.jpg	
- gid=5f01f3821fce337b
+https://i.pximg.net/img-original/img/2020/05/04/00/30/06/81271375_p1.jpg	
+ gid=fabaf811eb3bd325
  dir=Pixiv/
- out=GTZ taejune/Girl, Cat, Dog and Nintendo_p0.jpg
+ out=GTZ taejune/Aerith_p1.jpg
  referer=https://app-api.pixiv.net/
+ always-resume=true
  user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
  all-proxy=http://127.0.0.1:7890/
 https://i.pximg.net/img-original/img/2020/03/19/23/21/36/80191266_p0.jpg	
@@ -73,6 +68,14 @@ https://i.pximg.net/img-original/img/2020/03/01/09/13/10/79814660_p0.jpg
  always-resume=true
  user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
  all-proxy=http://127.0.0.1:7890/
+https://i.pximg.net/img-original/img/2020/04/01/00/08/12/80481750_p0.jpg	
+ gid=5f01f3821fce337b
+ dir=Pixiv/
+ out=GTZ taejune/Girl, Cat, Dog and Nintendo_p0.jpg
+ referer=https://app-api.pixiv.net/
+ always-resume=true
+ user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
+ all-proxy=http://127.0.0.1:7890/
 https://i.pximg.net/img-original/img/2020/02/02/00/00/12/79225018_p0.jpg	
  gid=b54435b51c86ddf7
  dir=Pixiv/
@@ -84,20 +87,6 @@ https://i.pximg.net/img-original/img/2020/02/02/00/00/12/79225018_p1.jpg
  gid=059a200e9a99ce39
  dir=Pixiv/
  out=GTZ taejune/Pepero_p1.jpg
- referer=https://app-api.pixiv.net/
- user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
- all-proxy=http://127.0.0.1:7890/
-https://i.pximg.net/img-original/img/2019/12/31/13/20/45/78601467_p0.jpg	
- gid=07da48de3a3d6ac8
- dir=Pixiv/
- out=GTZ taejune/manga cafe_p0.jpg
- referer=https://app-api.pixiv.net/
- user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
- all-proxy=http://127.0.0.1:7890/
-https://i.pximg.net/img-original/img/2020/02/10/12/39/03/79394450_p0.jpg	
- gid=8f35c96466bbacb3
- dir=Pixiv/
- out=GTZ taejune/海_p0.jpg
  referer=https://app-api.pixiv.net/
  user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
  all-proxy=http://127.0.0.1:7890/
@@ -116,6 +105,13 @@ https://i.pximg.net/img-original/img/2019/11/30/00/00/03/78057061_p0.jpg
  referer=https://app-api.pixiv.net/
  user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
  all-proxy=http://127.0.0.1:7890/
+https://i.pximg.net/img-original/img/2019/12/31/13/20/45/78601467_p0.jpg	
+ gid=07da48de3a3d6ac8
+ dir=Pixiv/
+ out=GTZ taejune/manga cafe_p0.jpg
+ referer=https://app-api.pixiv.net/
+ user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
+ all-proxy=http://127.0.0.1:7890/
 https://i.pximg.net/img-original/img/2019/12/11/00/30/05/78237271_p0.jpg	
  gid=e22eb3ce8b3cf297
  dir=Pixiv/
@@ -131,11 +127,12 @@ https://i.pximg.net/img-original/img/2019/11/20/00/00/05/77898146_p0.jpg
  always-resume=true
  user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
  all-proxy=http://127.0.0.1:7890/
-https://i.pximg.net/img-original/img/2019/12/19/00/00/05/78361210_p0.jpg	
- gid=061574c81a6d2b96
+https://i.pximg.net/img-original/img/2019/08/27/00/00/04/76478118_p0.jpg	
+ gid=273f4aa73af789d0
  dir=Pixiv/
- out=GTZ taejune/Winter_p0.jpg
+ out=GTZ taejune/Summer and Ice_p0.jpg
  referer=https://app-api.pixiv.net/
+ always-resume=true
  user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
  all-proxy=http://127.0.0.1:7890/
 https://i.pximg.net/img-original/img/2019/11/01/00/00/07/77583314_p0.jpg	
@@ -152,27 +149,11 @@ https://i.pximg.net/img-original/img/2019/10/24/00/00/04/77447565_p0.jpg
  referer=https://app-api.pixiv.net/
  user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
  all-proxy=http://127.0.0.1:7890/
-https://i.pximg.net/img-original/img/2019/08/27/00/00/04/76478118_p0.jpg	
- gid=273f4aa73af789d0
- dir=Pixiv/
- out=GTZ taejune/Summer and Ice_p0.jpg
- referer=https://app-api.pixiv.net/
- always-resume=true
- user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
- all-proxy=http://127.0.0.1:7890/
 https://i.pximg.net/img-original/img/2019/08/23/00/00/07/76405539_p0.jpg	
  gid=069c9a23897e28c7
  dir=Pixiv/
  out=GTZ taejune/Sleepy girl in the afternoon_p0.jpg
  referer=https://app-api.pixiv.net/
- user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
- all-proxy=http://127.0.0.1:7890/
-https://i.pximg.net/img-original/img/2019/10/01/11/44/56/77054698_p0.jpg	
- gid=273c7df20c880baf
- dir=Pixiv/
- out=GTZ taejune/With the cats_p0.jpg
- referer=https://app-api.pixiv.net/
- always-resume=true
  user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
  all-proxy=http://127.0.0.1:7890/
 https://i.pximg.net/img-original/img/2019/10/02/00/00/03/77064666_p0.jpg	
@@ -183,10 +164,25 @@ https://i.pximg.net/img-original/img/2019/10/02/00/00/03/77064666_p0.jpg
  always-resume=true
  user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
  all-proxy=http://127.0.0.1:7890/
-https://i.pximg.net/img-original/img/2019/07/17/00/00/05/75762617_p0.jpg	
- gid=9aa6a1e3cc1dc3b6
+https://i.pximg.net/img-original/img/2019/10/01/11/44/56/77054698_p0.jpg	
+ gid=273c7df20c880baf
  dir=Pixiv/
- out=GTZ taejune/Picnic with a friend_p0.jpg
+ out=GTZ taejune/With the cats_p0.jpg
+ referer=https://app-api.pixiv.net/
+ always-resume=true
+ user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
+ all-proxy=http://127.0.0.1:7890/
+https://i.pximg.net/img-original/img/2020/02/10/12/39/03/79394450_p0.jpg	
+ gid=8f35c96466bbacb3
+ dir=Pixiv/
+ out=GTZ taejune/海_p0.jpg
+ referer=https://app-api.pixiv.net/
+ user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
+ all-proxy=http://127.0.0.1:7890/
+https://i.pximg.net/img-original/img/2019/12/19/00/00/05/78361210_p0.jpg	
+ gid=061574c81a6d2b96
+ dir=Pixiv/
+ out=GTZ taejune/Winter_p0.jpg
  referer=https://app-api.pixiv.net/
  user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
  all-proxy=http://127.0.0.1:7890/
@@ -197,10 +193,17 @@ https://i.pximg.net/img-original/img/2019/03/31/03/44/21/73962935_p0.jpg
  referer=https://app-api.pixiv.net/
  user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
  all-proxy=http://127.0.0.1:7890/
-https://i.pximg.net/img-original/img/2019/06/20/00/00/05/75307632_p0.jpg	
- gid=0a332d56a847cea0
+https://i.pximg.net/img-original/img/2019/07/17/00/00/05/75762617_p0.jpg	
+ gid=9aa6a1e3cc1dc3b6
  dir=Pixiv/
- out=GTZ taejune/Tteokbokki_p0.jpg
+ out=GTZ taejune/Picnic with a friend_p0.jpg
+ referer=https://app-api.pixiv.net/
+ user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
+ all-proxy=http://127.0.0.1:7890/
+https://i.pximg.net/img-original/img/2019/06/03/00/10/51/75034270_p1.jpg	
+ gid=fd916a6881a8210f
+ dir=Pixiv/
+ out=GTZ taejune/Sisters_p1.jpg
  referer=https://app-api.pixiv.net/
  always-resume=true
  user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
@@ -213,21 +216,6 @@ https://i.pximg.net/img-original/img/2019/06/03/00/10/51/75034270_p0.jpg
  always-resume=true
  user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
  all-proxy=http://127.0.0.1:7890/
-https://i.pximg.net/img-original/img/2019/05/18/00/00/05/74773873_p0.jpg	
- gid=4bab9046670a054f
- dir=Pixiv/
- out=GTZ taejune/Crosswalk_p0.jpg
- referer=https://app-api.pixiv.net/
- user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
- all-proxy=http://127.0.0.1:7890/
-https://i.pximg.net/img-original/img/2019/06/03/00/10/51/75034270_p1.jpg	
- gid=fd916a6881a8210f
- dir=Pixiv/
- out=GTZ taejune/Sisters_p1.jpg
- referer=https://app-api.pixiv.net/
- always-resume=true
- user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
- all-proxy=http://127.0.0.1:7890/
 https://i.pximg.net/img-original/img/2019/02/27/00/30/00/73409663_p0.jpg	
  gid=4393434935f0f5b0
  dir=Pixiv/
@@ -235,11 +223,20 @@ https://i.pximg.net/img-original/img/2019/02/27/00/30/00/73409663_p0.jpg
  referer=https://app-api.pixiv.net/
  user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
  all-proxy=http://127.0.0.1:7890/
-https://i.pximg.net/img-original/img/2019/02/11/02/08/51/73114636_p0.jpg	
- gid=07adf65825500dd3
+https://i.pximg.net/img-original/img/2019/05/18/00/00/05/74773873_p0.jpg	
+ gid=4bab9046670a054f
  dir=Pixiv/
- out=GTZ taejune/trip alone_p0.jpg
+ out=GTZ taejune/Crosswalk_p0.jpg
  referer=https://app-api.pixiv.net/
+ always-resume=true
+ user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
+ all-proxy=http://127.0.0.1:7890/
+https://i.pximg.net/img-original/img/2019/06/20/00/00/05/75307632_p0.jpg	
+ gid=0a332d56a847cea0
+ dir=Pixiv/
+ out=GTZ taejune/Tteokbokki_p0.jpg
+ referer=https://app-api.pixiv.net/
+ always-resume=true
  user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
  all-proxy=http://127.0.0.1:7890/
 https://i.pximg.net/img-original/img/2019/03/31/03/44/21/73962935_p1.jpg	
@@ -257,6 +254,13 @@ https://i.pximg.net/img-original/img/2019/04/25/00/57/04/74364959_p0.jpg
  referer=https://app-api.pixiv.net/
  user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
  all-proxy=http://127.0.0.1:7890/
+https://i.pximg.net/img-original/img/2020/05/27/16/07/02/81892005_p0.jpg	
+ gid=fce15e7b1879d9d3
+ dir=Pixiv/
+ out=GTZ taejune/Kaguya and Kei_p0.jpg
+ referer=https://app-api.pixiv.net/
+ user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
+ all-proxy=http://127.0.0.1:7890/
 https://i.pximg.net/img-original/img/2018/11/21/21/59/08/71763738_p0.jpg	
  gid=3464517ddd6b26bd
  dir=Pixiv/
@@ -265,17 +269,17 @@ https://i.pximg.net/img-original/img/2018/11/21/21/59/08/71763738_p0.jpg
  always-resume=true
  user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
  all-proxy=http://127.0.0.1:7890/
+https://i.pximg.net/img-original/img/2019/02/11/02/08/51/73114636_p0.jpg	
+ gid=07adf65825500dd3
+ dir=Pixiv/
+ out=GTZ taejune/trip alone_p0.jpg
+ referer=https://app-api.pixiv.net/
+ user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
+ all-proxy=http://127.0.0.1:7890/
 https://i.pximg.net/img-original/img/2018/11/26/07/17/29/71839394_p0.jpg	
  gid=410338e13d782e53
  dir=Pixiv/
  out=GTZ taejune/Atago and Takao_p0.jpg
- referer=https://app-api.pixiv.net/
- user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
- all-proxy=http://127.0.0.1:7890/
-https://i.pximg.net/img-original/img/2020/05/27/16/07/02/81892005_p0.jpg	
- gid=fce15e7b1879d9d3
- dir=Pixiv/
- out=GTZ taejune/Kaguya and Kei_p0.jpg
  referer=https://app-api.pixiv.net/
  user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
  all-proxy=http://127.0.0.1:7890/
@@ -307,6 +311,7 @@ https://i.pximg.net/img-original/img/2020/04/01/00/08/12/80481750_p0.jpg
  dir=Pixiv/
  out=GTZ taejune/Girl, Cat, Dog and Nintendo_p0.jpg
  referer=https://app-api.pixiv.net/
+ always-resume=true
  user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
  all-proxy=http://127.0.0.1:7890/
 https://i.pximg.net/img-original/img/2020/03/01/09/13/10/79814660_p1.jpg	
@@ -322,6 +327,7 @@ https://i.pximg.net/img-original/img/2020/05/04/00/30/06/81271375_p1.jpg
  dir=Pixiv/
  out=GTZ taejune/Aerith_p1.jpg
  referer=https://app-api.pixiv.net/
+ always-resume=true
  user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
  all-proxy=http://127.0.0.1:7890/
 https://i.pximg.net/img-original/img/2020/05/27/16/07/02/81892005_p2.jpg	
@@ -339,19 +345,19 @@ https://i.pximg.net/img-original/img/2020/03/19/23/21/36/80191266_p0.jpg
  always-resume=true
  user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
  all-proxy=http://127.0.0.1:7890/
-https://i.pximg.net/img-original/img/2020/02/10/12/39/03/79394450_p0.jpg	
- gid=1a6af210ecd60694
- dir=Pixiv/
- out=GTZ taejune/海_p0.jpg
- referer=https://app-api.pixiv.net/
- user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
- all-proxy=http://127.0.0.1:7890/
 https://i.pximg.net/img-original/img/2020/02/02/00/00/12/79225018_p2.jpg	
  gid=b2959650bd94dd1e
  dir=Pixiv/
  out=GTZ taejune/Pepero_p2.jpg
  referer=https://app-api.pixiv.net/
  always-resume=true
+ user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
+ all-proxy=http://127.0.0.1:7890/
+https://i.pximg.net/img-original/img/2020/02/10/12/39/03/79394450_p0.jpg	
+ gid=1a6af210ecd60694
+ dir=Pixiv/
+ out=GTZ taejune/海_p0.jpg
+ referer=https://app-api.pixiv.net/
  user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
  all-proxy=http://127.0.0.1:7890/
 https://i.pximg.net/img-original/img/2020/03/01/09/13/10/79814660_p0.jpg	
@@ -369,17 +375,17 @@ https://i.pximg.net/img-original/img/2020/02/02/00/00/12/79225018_p1.jpg
  referer=https://app-api.pixiv.net/
  user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
  all-proxy=http://127.0.0.1:7890/
+https://i.pximg.net/img-original/img/2019/11/30/00/00/03/78057061_p0.jpg	
+ gid=0714c624915aaefc
+ dir=Pixiv/
+ out=GTZ taejune/BLUE_p0.jpg
+ referer=https://app-api.pixiv.net/
+ user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
+ all-proxy=http://127.0.0.1:7890/
 https://i.pximg.net/img-original/img/2020/02/02/00/00/12/79225018_p0.jpg	
  gid=1f976783cb0d5bfc
  dir=Pixiv/
  out=GTZ taejune/Pepero_p0.jpg
- referer=https://app-api.pixiv.net/
- user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
- all-proxy=http://127.0.0.1:7890/
-https://i.pximg.net/img-original/img/2019/12/31/13/20/45/78601467_p0.jpg	
- gid=253870812c44fa07
- dir=Pixiv/
- out=GTZ taejune/manga cafe_p0.jpg
  referer=https://app-api.pixiv.net/
  user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
  all-proxy=http://127.0.0.1:7890/
@@ -398,10 +404,10 @@ https://i.pximg.net/img-original/img/2019/11/20/00/00/05/77898146_p0.jpg
  always-resume=true
  user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
  all-proxy=http://127.0.0.1:7890/
-https://i.pximg.net/img-original/img/2019/11/30/00/00/03/78057061_p0.jpg	
- gid=0714c624915aaefc
+https://i.pximg.net/img-original/img/2019/12/31/13/20/45/78601467_p0.jpg	
+ gid=253870812c44fa07
  dir=Pixiv/
- out=GTZ taejune/BLUE_p0.jpg
+ out=GTZ taejune/manga cafe_p0.jpg
  referer=https://app-api.pixiv.net/
  user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
  all-proxy=http://127.0.0.1:7890/
@@ -416,6 +422,13 @@ https://i.pximg.net/img-original/img/2019/12/11/00/30/05/78237271_p0.jpg
  gid=ce087125df57b0bf
  dir=Pixiv/
  out=GTZ taejune/on the stairs_p0.jpg
+ referer=https://app-api.pixiv.net/
+ user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
+ all-proxy=http://127.0.0.1:7890/
+https://i.pximg.net/img-original/img/2019/07/17/00/00/05/75762617_p0.jpg	
+ gid=c7bea202bcf48335
+ dir=Pixiv/
+ out=GTZ taejune/Picnic with a friend_p0.jpg
  referer=https://app-api.pixiv.net/
  user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
  all-proxy=http://127.0.0.1:7890/
@@ -435,13 +448,6 @@ https://i.pximg.net/img-original/img/2019/10/01/11/44/56/77054698_p0.jpg
  always-resume=true
  user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
  all-proxy=http://127.0.0.1:7890/
-https://i.pximg.net/img-original/img/2019/07/17/00/00/05/75762617_p0.jpg	
- gid=c7bea202bcf48335
- dir=Pixiv/
- out=GTZ taejune/Picnic with a friend_p0.jpg
- referer=https://app-api.pixiv.net/
- user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
- all-proxy=http://127.0.0.1:7890/
 https://i.pximg.net/img-original/img/2019/10/24/00/00/04/77447565_p0.jpg	
  gid=8ce4c90879ead744
  dir=Pixiv/
@@ -457,19 +463,19 @@ https://i.pximg.net/img-original/img/2019/08/27/00/00/04/76478118_p0.jpg
  always-resume=true
  user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
  all-proxy=http://127.0.0.1:7890/
-https://i.pximg.net/img-original/img/2019/08/23/00/00/07/76405539_p0.jpg	
- gid=283ab9ff49ebc089
- dir=Pixiv/
- out=GTZ taejune/Sleepy girl in the afternoon_p0.jpg
- referer=https://app-api.pixiv.net/
- user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
- all-proxy=http://127.0.0.1:7890/
 https://i.pximg.net/img-original/img/2019/06/20/00/00/05/75307632_p0.jpg	
  gid=c7a570e467081366
  dir=Pixiv/
  out=GTZ taejune/Tteokbokki_p0.jpg
  referer=https://app-api.pixiv.net/
  always-resume=true
+ user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
+ all-proxy=http://127.0.0.1:7890/
+https://i.pximg.net/img-original/img/2019/08/23/00/00/07/76405539_p0.jpg	
+ gid=283ab9ff49ebc089
+ dir=Pixiv/
+ out=GTZ taejune/Sleepy girl in the afternoon_p0.jpg
+ referer=https://app-api.pixiv.net/
  user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
  all-proxy=http://127.0.0.1:7890/
 https://i.pximg.net/img-original/img/2019/06/03/00/10/51/75034270_p1.jpg	
@@ -480,26 +486,19 @@ https://i.pximg.net/img-original/img/2019/06/03/00/10/51/75034270_p1.jpg
  always-resume=true
  user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
  all-proxy=http://127.0.0.1:7890/
+https://i.pximg.net/img-original/img/2019/02/27/00/30/00/73409663_p0.jpg	
+ gid=a5ab5ec40360a220
+ dir=Pixiv/
+ out=GTZ taejune/nap_p0.jpg
+ referer=https://app-api.pixiv.net/
+ user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
+ all-proxy=http://127.0.0.1:7890/
 https://i.pximg.net/img-original/img/2019/06/03/00/10/51/75034270_p0.jpg	
  gid=4ff7bdccaded9932
  dir=Pixiv/
  out=GTZ taejune/Sisters_p0.jpg
  referer=https://app-api.pixiv.net/
  always-resume=true
- user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
- all-proxy=http://127.0.0.1:7890/
-https://i.pximg.net/img-original/img/2019/03/31/03/44/21/73962935_p0.jpg	
- gid=33e82528aad0e901
- dir=Pixiv/
- out=GTZ taejune/桜_p0.jpg
- referer=https://app-api.pixiv.net/
- user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
- all-proxy=http://127.0.0.1:7890/
-https://i.pximg.net/img-original/img/2019/02/27/00/30/00/73409663_p0.jpg	
- gid=a5ab5ec40360a220
- dir=Pixiv/
- out=GTZ taejune/nap_p0.jpg
- referer=https://app-api.pixiv.net/
  user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
  all-proxy=http://127.0.0.1:7890/
 https://i.pximg.net/img-original/img/2019/03/31/03/44/21/73962935_p1.jpg	
@@ -522,6 +521,7 @@ https://i.pximg.net/img-original/img/2019/05/18/00/00/05/74773873_p0.jpg
  dir=Pixiv/
  out=GTZ taejune/Crosswalk_p0.jpg
  referer=https://app-api.pixiv.net/
+ always-resume=true
  user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
  all-proxy=http://127.0.0.1:7890/
 https://i.pximg.net/img-original/img/2019/04/25/00/57/04/74364959_p0.jpg	
@@ -537,6 +537,13 @@ https://i.pximg.net/img-original/img/2018/11/21/21/59/08/71763738_p0.jpg
  out=GTZ taejune/95 式_p0.jpg
  referer=https://app-api.pixiv.net/
  always-resume=true
+ user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
+ all-proxy=http://127.0.0.1:7890/
+https://i.pximg.net/img-original/img/2019/03/31/03/44/21/73962935_p0.jpg	
+ gid=33e82528aad0e901
+ dir=Pixiv/
+ out=GTZ taejune/桜_p0.jpg
+ referer=https://app-api.pixiv.net/
  user-agent=PixivAndroidApp/6.55.1 (Android 6.55.1; Android SDK built for x64)
  all-proxy=http://127.0.0.1:7890/
 https://i.pximg.net/img-original/img/2018/11/26/07/17/29/71839394_p0.jpg	

@@ -198,5 +198,16 @@
   "rainbow-fart.enabled": true,
   "rainbow-fart.ffplay": "/opt/homebrew/bin/ffplay",
   "snippets.ultisnips.pythonPrompt": false,
-  "Lua.telemetry.enable": true
+  "Lua.telemetry.enable": true,
+  "languageserver": {
+    "dockerfile": {
+      "command": "docker-langserver",
+      "filetypes": [
+        "dockerfile"
+      ],
+      "args": [
+        "--stdio"
+      ]
+    }
+  }
 }

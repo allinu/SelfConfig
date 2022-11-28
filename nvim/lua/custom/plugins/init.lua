@@ -16,6 +16,7 @@ return {
   ["folke/which-key.nvim"] = false,
   ["windwp/nvim-autopairs"] = false,
 
+  ['sicong-li/T.vim'] = {},
   ['nvim-lua/plenary.nvim'] = {},
   ['nvim-telescope/telescope.nvim'] = {},
   ['easymotion/vim-easymotion'] = {},
@@ -48,6 +49,5 @@ return {
   ['luochen1990/rainbow'] = {},
   ['psliwka/vim-smoothie'] = {},
   ['tpope/vim-surround'] = {},
-  ['majutsushi/tagbar'] = {},
   ['sakshamgupta05/vim-todo-highlight'] = {},
 }

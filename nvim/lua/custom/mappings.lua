@@ -27,7 +27,17 @@ keyset("i", "<c-space>", "coc#refresh()", {silent = true, expr = true})
 
 M.tagbar = {
   n = {
-    [',t'] = {':TagbarToggle<CR>', "show code tagbar"},
+    [',t'] = {':CocOutline<CR>', "show code outline", opts},
+  }
+}
+
+M.t_vim = {
+  n = {
+    ['<leader>t'] = {":call T#Main(expand('<cword>'))<cr>", opts, "translate word"},
+    ['<leader>r'] = {":call T#DisplayRecent()<cr>", opts, "show recent translate words"}
+  },
+  v = {
+    ['<leader>t'] = {":<c-u>call T#VisualSearch(visualmode())<cr>", opts, "translate word"},
   }
 }
 
