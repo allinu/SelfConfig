@@ -38,7 +38,7 @@
   "suggest.floatConfig": {
     "border": true,
     "rounded": true,
-    "winblend": 15
+    "winblend": 15,
   },
   "hover.floatConfig": {
     "border": true,

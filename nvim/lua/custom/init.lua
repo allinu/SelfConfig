@@ -4,6 +4,38 @@ vim.g.coc_status_error_sign = '•'
 vim.g.coc_status_warning_sign = '•'
 vim.g.coc_global_extensions = {'coc-snippets','coc-pairs','coc-json','coc-highlight','coc-git','coc-emoji','coc-lists','coc-stylelint','coc-yaml','coc-gitignore','coc-yank','coc-actions','coc-db','coc-sh','coc-spell-checker','coc-vimlsp','coc-explorer','coc-style-helper','coc-react-refactor','coc-css','coc-tsserver','coc-go','coc-vetur','coc-pyright','coc-html','coc-eslint','coc-pydocstring','coc-rome','coc-sumneko-lua','@yaegassy/coc-volar','coc-emmet','coc-rainbow-fart',}
 
+-- Highlight the symbol and its references when holding the cursor.
+vim.api.nvim_create_augroup("CocGroup", {})
+vim.api.nvim_create_autocmd("CursorHold", {
+    group = "CocGroup",
+    command = "silent call CocActionAsync('highlight')",
+    desc = "Highlight symbol under cursor on CursorHold"
+})
+
+-- Update signature help on jump placeholder.
+vim.api.nvim_create_autocmd("User", {
+    group = "CocGroup",
+    pattern = "CocJumpPlaceholder",
+    command = "call CocActionAsync('showSignatureHelp')",
+    desc = "Update signature help on jump placeholder"
+})
+
+-- Add `:Format` command to format current buffer.
+vim.api.nvim_create_user_command("Format", "call CocAction('format')", {})
+
+-- " Add `:Fold` command to fold current buffer.
+vim.api.nvim_create_user_command("Fold", "call CocAction('fold', <f-args>)", {nargs = '?'})
+
+-- Add `:OR` command for organize imports of the current buffer.
+vim.api.nvim_create_user_command("OR", "call CocActionAsync('runCommand', 'editor.action.organizeImport')", {})
+
+-- Add (Neo)Vim's native statusline support.
+-- NOTE: Please see `:h coc-status` for integrations with external plugins that
+-- provide custom statusline: lightline.vim, vim-airline.
+vim.opt.statusline:prepend("%{coc#status()}%{get(b:,'coc_current_function','')}")
+
+
+
 vim.g.rainbow_active = 1
 vim.g.smoothie_enabled = 1
 
@@ -18,8 +50,6 @@ vim.opt.signcolumn = "yes"
 vim.g.TWinSize = 20
 vim.g.displayRecentNum = 10
 vim.g.totalRecentNum = 100
-
-vim.cmd('highlight cursorline cterm=underline gui=underline')
 
 vim.g.todo_highlight_config = {
     TODO = {

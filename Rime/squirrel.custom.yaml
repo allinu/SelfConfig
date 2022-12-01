@@ -501,3 +501,7 @@ patch:
       # no_inline: true
     com.raycast.macos:
       ascii_mode: true
+    # 微信开发者工具
+    com.tencent.webplusdevtools:
+      ascii_mode: true
+      no_inline: true
