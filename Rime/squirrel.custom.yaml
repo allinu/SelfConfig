@@ -484,6 +484,9 @@ patch:
     com.jetbrains.WebStorm: # WebStorm
       ascii_mode: true
       no_inline: true
+    com.jetbrains.goland: #GoLand
+      ascii_mode: true
+      no_inline: true
     com.electron.master-desktop: # Master Go
       ascii_mode: true
       no_inline: true

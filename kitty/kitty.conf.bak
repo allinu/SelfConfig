@@ -1347,6 +1347,6 @@ map cmd+enter    toggle_fullscreen
 
 
 # BEGIN_KITTY_THEME
-# Dracula
+# Ayu Light
 include current-theme.conf
 # END_KITTY_THEME

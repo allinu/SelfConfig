@@ -4,15 +4,14 @@
   "suggest.timeout": 500,
   "suggest.noselect": false,
   "suggest.detailField": "abbr",
-  "suggest.snippetIndicator": "  ",
+  "suggest.snippetIndicator": " ",
   "suggest.triggerCompletionWait": 50,
-  "suggest.maxCompleteItemCount": 10,
   "suggest.completionItemKindLabels": {
     "keyword": "\uf1de",
     "variable": "\ue79b",
     "value": "\uf89f",
     "operator": "\u03a8",
-    "function": "",
+    "function": "\u0192",
     "reference": "\ufa46",
     "constant": "\uf8fe",
     "method": "\uf09a",
@@ -34,36 +33,15 @@
     "typeParameter": "\uf728",
     "default": "\uf29c"
   },
-  "suggest.enableFloat": true,
-  "suggest.floatConfig": {
-    "border": true,
-    "rounded": true,
-    "winblend": 15,
-  },
-  "hover.floatConfig": {
-    "border": true,
-    "rounded": true,
-    "winblend": 15
-  },
-  // Windows style
-  "notification.border": true,
-  "notification.winblend": 40,
   //diagnostic
   "diagnostic.errorSign": " ",
   "diagnostic.warningSign": " ",
   "diagnostic.infoSign": " ",
-  "diagnostic.hintSign": "𥉉",
-  "diagnostic.virtualTextPrefix": " ",
   "diagnostic.displayByAle": false,
   "diagnostic.refreshOnInsertMode": true,
-  "diagnostic.floatConfig": {
-    "border": true,
-    "rounded": true,
-    "winblend": 15
-  },
   //git
   "git.enableGutters": true,
-  "git.branchCharacter": "שׂ ",
+  "git.branchCharacter": "\uf418",
   "git.addGBlameToBufferVar": true,
   "git.addGBlameToVirtualText": true,
   "git.virtualTextPrefix": " ",
@@ -75,15 +53,11 @@
   "git.addedSign.text": " ",
   "git.changedSign.text": " ",
   "git.removedSign.text": " ",
-  "git.topRemovedSign.text": " ",
-  "git.changeRemovedSign.text": " ",
+  "git.topRemovedSign.text": "  ",
+  "git.changeRemovedSign.text": "﫧",
   //CocList
-  "list.source.files.defaultOptions": [
-    "--auto-preview"
-  ],
-  "list.source.outline.defaultOptions": [
-    "--auto-preview"
-  ],
+  "list.source.files.defaultOptions": ["--auto-preview"],
+  "list.source.outline.defaultOptions": ["--auto-preview"],
   //prettier
   "coc.preferences.formatOnSaveFiletypes": [
     "html",
@@ -96,9 +70,9 @@
     "go",
     "c",
     "cpp",
+    "vue",
     "python",
-    "json",
-    "vue"
+    "json"
   ],
   //multiple curssor
   "cursors.nextKey": "<C-n>",
@@ -107,26 +81,14 @@
   //sessions
   "session.directory": "~/.cache/vim/session",
   // coc-explorer
-  "explorer.icon.expanded": " ",
-  "explorer.icon.collapsed": " ",
+  "explorer.icon.expanded": " ",
+  "explorer.icon.collapsed": " ",
   "explorer.width": 30,
   "explorer.icon.enableNerdfont": true,
   "explorer.quitOnOpen": true,
   "explorer.floating.width": -20,
   "explorer.floating.height": -10,
-  "explorer.floating.border.title": " Find files",
-  "explorer.floating.border.chars": [
-    "─",
-    "│",
-    "─",
-    "│",
-    "╭",
-    "╮",
-    "╯",
-    "╰"
-  ],
   "explorer.openAction.strategy": "sourceWindow",
-  "explorer.git.showIgnored": false,
   // coc-actions
   "coc-actions.hideCursor": false,
   // Cspell
@@ -197,20 +159,5 @@
   "pyright.organizeimports.provider": "isort",
   "rainbow-fart.enabled": true,
   "rainbow-fart.ffplay": "/opt/homebrew/bin/ffplay",
-  "snippets.ultisnips.pythonPrompt": false,
-  "Lua.telemetry.enable": true,
-  "languageserver": {
-    "dockerfile": {
-      "command": "docker-langserver",
-      "filetypes": [
-        "dockerfile"
-      ],
-      "args": [
-        "--stdio"
-      ]
-    }
-  },
-  "cSpell.userWords": [
-    "codemirror"
-  ]
+  "snippets.ultisnips.pythonPrompt": false
 }

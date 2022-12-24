@@ -15,6 +15,9 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="/Users/liona/Library/Python/3.9/bin:$PATH"
 export PATH="/Users/liona/.local/share/nvim/mason/bin:$PATH"
 export PATH="/Users/liona/.local/bin:$PATH"
+export PNPM_HOME="/Users/liona/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+export PATH="/opt/homebrew/opt/ncurses/bin:$PATH"
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
 export HOMEBREW_NO_ENV_HINTS=1
 
@@ -24,6 +27,9 @@ export CPPFLAGS="-I/opt/homebrew/opt/node@16/include"
 export LDFLAGS="-L/opt/homebrew/opt/node@14/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/node@14/include"
 export CPPFLAGS="-I/usr/local/opt/openjdk/include"
+export LDFLAGS="-L/opt/homebrew/opt/ncurses/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/ncurses/include"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/ncurses/lib/pkgconfig"
 
 
 export WECHALLUSER="Liona"
@@ -55,11 +61,12 @@ export DISABLE_AUTO_TITLE=true
 
 # TMUX 
 ## /etc/profile  
-export TERM=xterm-256color
-if [[ -z "$TMUX" ]] && [ "$TERM_PROGRAM" != "vscode" ]; then
-  tmux has 2> /dev/null || tmux new-session -s new_tmux && tmux attach
-  #test -z "$TMUX" && (tmux attach || tmux new-session)
-fi
+# export TERM=xterm-256color
+# export TERM=xterm-256color
+# if [[ -z "$TMUX" ]] && [ "$TERMINFO" = "/Applications/kitty.app/Contents/Resources/kitty/terminfo" ]; then
+#   tmux has 2> /dev/null || tmux new-session -s new_tmux && tmux attach
+#   #test -z "$TMUX" && (tmux attach || tmux new-session)
+# fi
 
 
 
