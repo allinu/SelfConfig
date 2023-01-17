@@ -1,6 +1,9 @@
 vim.g.neovide_cursor_vfx_mode = "railgun"
 vim.opt.guifont = "FiraCode Nerd Font:h14"
 
+vim.g.translator_window_max_width = 40
+vim.g.translator_window_borderchars = {'─', '│', '─', '│', '╭', '╮', '╯', '╰'}
+
 vim.g.coc_snippet_next = '<TAB>'
 vim.g.coc_snippet_prev = '<S-TAB>'
 vim.g.coc_status_error_sign = '•'

@@ -52,7 +52,8 @@ return {
   ["folke/which-key.nvim"] = false,
   ["windwp/nvim-autopairs"] = false,
 
-  ['sicong-li/T.vim'] = {},
+  -- ['sicong-li/T.vim'] = {},
+  ['voldikss/vim-translator'] = {},
   ['nvim-lua/plenary.nvim'] = {},
   ['nvim-telescope/telescope.nvim'] = {},
   ['easymotion/vim-easymotion'] = {},
@@ -86,5 +87,6 @@ return {
   ['psliwka/vim-smoothie'] = {},
   ['machakann/vim-sandwich'] = {},
   ['sakshamgupta05/vim-todo-highlight'] = {},
+  ['matsuuu/pinkmare'] = {},
   ["lukas-reineke/indent-blankline.nvim"] = M.indent_blankline,
 }

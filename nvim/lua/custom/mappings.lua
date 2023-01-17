@@ -43,13 +43,12 @@ M.tagbar = {
   }
 }
 
-M.t_vim = {
+M.translate = {
   n = {
-    ['<leader>t'] = {":call T#Main(expand('<cword>'))<cr>", opts, "translate word"},
-    ['<leader>r'] = {":call T#DisplayRecent()<cr>", opts, "show recent translate words"}
+    ['<leader>t'] = {":TranslateW<CR>", "translate word", opts},
   },
   v = {
-    ['<leader>t'] = {":<c-u>call T#VisualSearch(visualmode())<cr>", opts, "translate word"},
+    ['<leader>t'] = {":TranslateW<CR>", "translate words", opts},
   }
 }
 

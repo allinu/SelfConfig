@@ -43,7 +43,7 @@ export ZSH="/Users/liona/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="liona"
-ZSH_THEME="liona"
+ZSH_THEME="liona" # set by `omz`
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#d1dede,bg=#0d0f14,underline"
 
 export ZSH_DISABLE_COMPFIX=true
@@ -62,11 +62,11 @@ export DISABLE_AUTO_TITLE=true
 # TMUX 
 ## /etc/profile  
 # export TERM=xterm-256color
-# export TERM=xterm-256color
-# if [[ -z "$TMUX" ]] && [ "$TERMINFO" = "/Applications/kitty.app/Contents/Resources/kitty/terminfo" ]; then
-#   tmux has 2> /dev/null || tmux new-session -s new_tmux && tmux attach
-#   #test -z "$TMUX" && (tmux attach || tmux new-session)
-# fi
+export TERM=xterm-256color
+if [[ -z "$TMUX" ]] && [ "$TERMINFO" = "/Applications/kitty.app/Contents/Resources/kitty/terminfo" ]; then
+  tmux has 2> /dev/null || tmux new-session -s new_tmux && tmux attach
+  #test -z "$TMUX" && (tmux attach || tmux new-session)
+fi
 
 
 
@@ -420,3 +420,5 @@ unset __conda_setup
 export LC_ALL=zh_CN.UTF-8
 export LANG=zh_CN.UTF-8
 
+
+source /Users/liona/.docker/init-zsh.sh || true # Added by Docker Desktop

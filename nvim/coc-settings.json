@@ -208,6 +208,15 @@
       "args": [
         "--stdio"
       ]
+    },
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": [
+        "go.mod"
+      ],
+      "filetypes": [
+        "go"
+      ]
     }
   },
   "cSpell.userWords": [
