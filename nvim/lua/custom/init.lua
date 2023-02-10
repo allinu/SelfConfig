@@ -3,6 +3,8 @@ vim.opt.guifont = "FiraCode Nerd Font:h14"
 
 vim.g.translator_window_max_width = 40
 vim.g.translator_window_borderchars = {'─', '│', '─', '│', '╭', '╮', '╯', '╰'}
+vim.g.telescope.defaults.border = true
+vim.g.telescope.defaults.borderchars = {'─', '│', '─', '│', '╭', '╮', '╯', '╰'}
 
 vim.g.coc_snippet_next = '<TAB>'
 vim.g.coc_snippet_prev = '<S-TAB>'

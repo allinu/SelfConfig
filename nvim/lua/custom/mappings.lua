@@ -78,6 +78,7 @@ M.telescope = {
     ['<leader>fg'] = { "<cmd>Telescope live_grep<cr>", "file live grep" },
     ['<leader>fb'] = { "<cmd>Telescope buffers<cr>", "find buffers" },
     ['<leader>fh'] = { "<cmd>Telescope help_tags<cr>", "find help tags" },
+    ['<leader>ft'] = { "<cmd>Telescope themes<cr>", "find themes" },
   }
 }
 

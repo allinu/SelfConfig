@@ -62,11 +62,11 @@ export DISABLE_AUTO_TITLE=true
 # TMUX 
 ## /etc/profile  
 # export TERM=xterm-256color
-export TERM=xterm-256color
-if [[ -z "$TMUX" ]] && [ "$TERMINFO" = "/Applications/kitty.app/Contents/Resources/kitty/terminfo" ]; then
-  tmux has 2> /dev/null || tmux new-session -s new_tmux && tmux attach
-  #test -z "$TMUX" && (tmux attach || tmux new-session)
-fi
+# export TERM=xterm-256color
+# if [[ -z "$TMUX" ]] && [ "$TERMINFO" = "/Applications/kitty.app/Contents/Resources/kitty/terminfo" ]; then
+  # tmux has 2> /dev/null || tmux new-session -s new_tmux && tmux attach
+  # #test -z "$TMUX" && (tmux attach || tmux new-session)
+# fi
 
 
 

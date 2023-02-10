@@ -18,10 +18,10 @@ patch:
   style/color_scheme_dark: liona_dark
   # style/color_scheme_dark: mac_dark
   #style/color_scheme_dark: psionics
-  #style/color_scheme_dark: solarized_rock
-  #style/color_scheme_dark: solarized_dark
+  # style/color_scheme_dark: solarized_rock
+  # style/color_scheme_dark: solarized_dark
   #style/color_scheme_dark: purity
-  #style/color_scheme_dark: starcraft
+  # style/color_scheme_dark: starcraft
   #style/color_scheme_dark: nord_dark
 
   # 皮肤主题
@@ -38,7 +38,7 @@ patch:
       hilited_candidate_text_color: 0xFFFFFF  # 第一候选项文字颜色
       hilited_candidate_label_color: 0xFFFFFF # 第一候选项编号颜色
       hilited_comment_text_color: 0x000000    # 注解文字高亮
-      hilited_text_color: 0x5353FF            # 高亮拼音 (需要开启内嵌编码)
+      hilited_text_color: 0xFFFFFF            # 高亮拼音 (需要开启内嵌编码)
       text_color: 0x000000                    # 拼音行文字颜色
       label_color: 0x000000                   # 预选栏编号颜色
       horizontal: true                        # 水平排列
@@ -69,7 +69,7 @@ patch:
       hilited_candidate_text_color: 0xFFFFFF  # 第一候选项文字颜色
       hilited_candidate_label_color: 0xFFFFFF # 第一候选项编号颜色
       hilited_comment_text_color: 0x999999    # 注解文字高亮
-      hilited_text_color: 0x5353FF            # 高亮拼音 (需要开启内嵌编码)
+      hilited_text_color: 0xFFFFFF            # 高亮拼音 (需要开启内嵌编码)
       text_color: 0x5353FF                    # 拼音行文字颜色
       label_color: 0xFFFFFF                   # 预选栏编号颜色
       horizontal: true                        # 水平排列
@@ -513,3 +513,6 @@ patch:
     com.tencent.webplusdevtools:
       ascii_mode: true
       no_inline: true
+    # company.thebrowser.Browser:
+    #   ascii_mode: true
+    #   no_inline: true

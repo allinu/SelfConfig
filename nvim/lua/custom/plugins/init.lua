@@ -32,8 +32,6 @@ M.indent_blankline = {
   end,
 }
 
-
-
 return {
   ["lewis6991/gitsigns.nvim"] = false,
   ["williamboman/mason.nvim"] = false,
@@ -89,4 +87,5 @@ return {
   ['sakshamgupta05/vim-todo-highlight'] = {},
   ['matsuuu/pinkmare'] = {},
   ["lukas-reineke/indent-blankline.nvim"] = M.indent_blankline,
+  ["github/copilot.vim"] = {},
 }
