@@ -10,3 +10,5 @@ HarmonyOS	hm	2
 T恤	txu
 U盘	upan
 up主	upzhu
+JavaScript  JavaScript  2
+Python  py  2
