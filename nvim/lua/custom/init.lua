@@ -2,15 +2,19 @@ vim.g.neovide_cursor_vfx_mode = "railgun"
 vim.opt.guifont = "FiraCode Nerd Font:h14"
 
 vim.g.translator_window_max_width = 40
-vim.g.translator_window_borderchars = {'─', '│', '─', '│', '╭', '╮', '╯', '╰'}
+vim.g.translator_window_borderchars = { '─', '│', '─', '│', '╭', '╮', '╯', '╰' }
 vim.g.telescope.defaults.border = true
-vim.g.telescope.defaults.borderchars = {'─', '│', '─', '│', '╭', '╮', '╯', '╰'}
+vim.g.telescope.defaults.borderchars = { '─', '│', '─', '│', '╭', '╮', '╯', '╰' }
 
 vim.g.coc_snippet_next = '<TAB>'
 vim.g.coc_snippet_prev = '<S-TAB>'
 vim.g.coc_status_error_sign = '•'
 vim.g.coc_status_warning_sign = '•'
-vim.g.coc_global_extensions = {'coc-snippets','coc-pairs','coc-json','coc-highlight','coc-git','coc-emoji','coc-lists','coc-stylelint','coc-yaml','coc-gitignore','coc-yank','coc-actions','coc-db','coc-sh','coc-spell-checker','coc-vimlsp','coc-explorer','coc-style-helper','coc-react-refactor','coc-css','coc-tsserver','coc-go','coc-vetur','coc-pyright','coc-html','coc-eslint','coc-pydocstring','coc-rome','coc-sumneko-lua','@yaegassy/coc-volar','coc-emmet','coc-rainbow-fart',}
+vim.g.coc_global_extensions = { 'coc-snippets', 'coc-pairs', 'coc-json', 'coc-highlight', 'coc-git', 'coc-emoji',
+    'coc-lists', 'coc-stylelint', 'coc-yaml', 'coc-gitignore', 'coc-yank', 'coc-actions', 'coc-db', 'coc-sh',
+    'coc-spell-checker', 'coc-vimlsp', 'coc-explorer', 'coc-style-helper', 'coc-react-refactor', 'coc-css',
+    'coc-tsserver', 'coc-go', 'coc-vetur', 'coc-pyright', 'coc-html', 'coc-eslint', 'coc-pydocstring', 'coc-rome',
+    'coc-sumneko-lua', '@yaegassy/coc-volar', 'coc-emmet', 'coc-rainbow-fart', }
 
 -- Highlight the symbol and its references when holding the cursor.
 vim.api.nvim_create_augroup("CocGroup", {})
@@ -32,7 +36,7 @@ vim.api.nvim_create_autocmd("User", {
 vim.api.nvim_create_user_command("Format", "call CocAction('format')", {})
 
 -- " Add `:Fold` command to fold current buffer.
-vim.api.nvim_create_user_command("Fold", "call CocAction('fold', <f-args>)", {nargs = '?'})
+vim.api.nvim_create_user_command("Fold", "call CocAction('fold', <f-args>)", { nargs = '?' })
 
 -- Add `:OR` command for organize imports of the current buffer.
 vim.api.nvim_create_user_command("OR", "call CocActionAsync('runCommand', 'editor.action.organizeImport')", {})

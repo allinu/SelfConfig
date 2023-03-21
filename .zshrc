@@ -31,9 +31,12 @@ export LDFLAGS="-L/opt/homebrew/opt/ncurses/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/ncurses/include"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/ncurses/lib/pkgconfig"
 
+export SSLKEYLOGFILE=~/sslkeylogfile/keylogfile.log
 
 export WECHALLUSER="Liona"
 export WECHALLTOKEN="03A18-15FCC-4DF9D-2217F-F0529-50DE4"
+
+export NOTES_PATH=" /Users/liona/BackUP/Documents/Obsidian/Database"
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/liona/.oh-my-zsh"
@@ -53,6 +56,10 @@ export GOPROXY="https://goproxy.cn"
 
 export RUSTUP_DIST_SERVER=https://mirrors.tuna.tsinghua.edu.cn/rustup
 export DISABLE_AUTO_TITLE=true
+
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # config proxy
 # export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
@@ -417,8 +424,8 @@ unset __conda_setup
 
 # export LC_ALL=en_US.UTF-8
 # export LANG=en_US.UTF-8
-export LC_ALL=zh_CN.UTF-8
-export LANG=zh_CN.UTF-8
+# export LC_ALL=zh_CN.UTF-8
+# export LANG=zh_CN.UTF-8
 
 
 source /Users/liona/.docker/init-zsh.sh || true # Added by Docker Desktop

@@ -514,3 +514,7 @@ patch:
     company.thebrowser.Browser:
       ascii_mode: true
       no_inline: true
+    com.memoryvault.MemoryVault:
+      ascii_mode: true
+      no_inline: true
+
