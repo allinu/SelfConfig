@@ -538,7 +538,7 @@ window_border_width 0
 #: when resizing the OS window. Note that this does not currently work
 #: on Wayland.
 
-# confirm_os_window_close 0
+confirm_os_window_close 0
 
 #: Ask for confirmation when closing an OS window or a tab that has at
 #: least this number of kitty windows in it. A value of zero disables
@@ -875,7 +875,7 @@ close_on_child_death yes
 #: ask before opening the link.
 
 # term xterm-kitty
-term xterm
+term xterm-256color
 
 #: The value of the TERM environment variable to set. Changing this
 #: can break many terminal programs, only change it if you know what
@@ -917,7 +917,7 @@ term xterm
 
 #: Hide the kitty window from running tasks (Option+Tab) on macOS.
 
-# macos_quit_when_last_window_closed no
+macos_quit_when_last_window_closed yes
 
 #: Have kitty quit when all the top-level windows are closed. By
 #: default, kitty will stay running, even with no open windows, as is
@@ -1361,6 +1361,6 @@ map cmd+enter    toggle_fullscreen
 
 
 # BEGIN_KITTY_THEME
-# GitHub Dark
+# Gruvbox Dark Hard
 include current-theme.conf
 # END_KITTY_THEME

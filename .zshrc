@@ -68,12 +68,11 @@ export NVM_DIR="$HOME/.nvm"
 
 # TMUX 
 ## /etc/profile  
-# export TERM=xterm-256color
-# export TERM=xterm-256color
-# if [[ -z "$TMUX" ]] && [ "$TERMINFO" = "/Applications/kitty.app/Contents/Resources/kitty/terminfo" ]; then
-  # tmux has 2> /dev/null || tmux new-session -s new_tmux && tmux attach
-  # #test -z "$TMUX" && (tmux attach || tmux new-session)
-# fi
+export TERM=xterm-256color
+if [[ -z "$TMUX" ]] && [ "$TERM_PROGRAM" != "vscode" ]; then
+  tmux has 2> /dev/null || tmux -2 new-session -s new_tmux && tmux -2 attach
+  #test -z "$TMUX" && (tmux attach || tmux new-session)
+fi
 
 
 
@@ -429,3 +428,6 @@ unset __conda_setup
 
 
 source /Users/liona/.docker/init-zsh.sh || true # Added by Docker Desktop
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+set rtp+=/opt/homebrew/opt/fzf
