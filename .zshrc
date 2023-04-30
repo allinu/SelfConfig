@@ -69,9 +69,17 @@ export NVM_DIR="$HOME/.nvm"
 # TMUX 
 ## /etc/profile  
 export TERM=xterm-256color
-if [[ -z "$TMUX" ]] && [ "$TERM_PROGRAM" != "vscode" ]; then
+if [[ -z "$TMUX" ]] && [ "$TERM_PROGRAM" != "vscode" ] && [ "$TERM_PROGRAM" != "OTHERS" ]; then
   tmux has 2> /dev/null || tmux -2 new-session -s new_tmux && tmux -2 attach
   #test -z "$TMUX" && (tmux attach || tmux new-session)
+fi
+
+
+if test -n "$KITTY_INSTALLATION_DIR"; then
+    export KITTY_SHELL_INTEGRATION="enabled"
+    autoload -Uz -- "$KITTY_INSTALLATION_DIR"/shell-integration/zsh/kitty-integration
+    kitty-integration
+    unfunction kitty-integration
 fi
 
 
@@ -402,7 +410,7 @@ alias cat="bat --theme Dracula"
 alias python="python3"
 alias pip="pip3"
 alias redis\-server="redis-server /usr/local/etc/redis.conf"
-# alias ssh="kitty +kitten ssh"
+alias ssh="kitty +kitten ssh"
 
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 
@@ -423,8 +431,8 @@ unset __conda_setup
 
 # export LC_ALL=en_US.UTF-8
 # export LANG=en_US.UTF-8
-# export LC_ALL=zh_CN.UTF-8
-# export LANG=zh_CN.UTF-8
+export LC_ALL=zh_CN.UTF-8
+export LANG=zh_CN.UTF-8
 
 
 source /Users/liona/.docker/init-zsh.sh || true # Added by Docker Desktop

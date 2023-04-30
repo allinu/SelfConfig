@@ -195,7 +195,7 @@
   "python.linting.pylintPath": "/Users/liona/.local/bin/pylint",
   "python.sortImports.path": "/Users/liona/.local/bin/isort",
   "pyright.organizeimports.provider": "isort",
-  "rainbow-fart.enabled": true,
+  "rainbow-fart.enabled": false,
   "rainbow-fart.ffplay": "/opt/homebrew/bin/ffplay",
   "snippets.ultisnips.pythonPrompt": false,
   "Lua.telemetry.enable": true,
