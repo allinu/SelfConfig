@@ -18,8 +18,8 @@ export PATH="/Users/liona/.local/bin:$PATH"
 export PNPM_HOME="/Users/liona/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 export PATH="/opt/homebrew/opt/ncurses/bin:$PATH"
-export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
 export HOMEBREW_NO_ENV_HINTS=1
+export PATH="/opt/homebrew/opt/libpcap/bin:$PATH"
 
 export GPG_TTY=$(tty)
 export LDFLAGS="-L/opt/homebrew/opt/node@16/lib"
@@ -30,6 +30,11 @@ export CPPFLAGS="-I/usr/local/opt/openjdk/include"
 export LDFLAGS="-L/opt/homebrew/opt/ncurses/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/ncurses/include"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/ncurses/lib/pkgconfig"
+export LDFLAGS="-L/opt/homebrew/opt/libpcap/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/libpcap/include"
+
+export FOFA_EMAIL="763103999@qq.com"
+export FOFA_KEY="2819e181e88348e4e2d30e0cfb6d7b44"
 
 export SSLKEYLOGFILE=~/sslkeylogfile/keylogfile.log
 
@@ -69,7 +74,7 @@ export NVM_DIR="$HOME/.nvm"
 # TMUX 
 ## /etc/profile  
 export TERM=xterm-256color
-if [[ -z "$TMUX" ]] && [ "$TERM_PROGRAM" != "vscode" ] && [ "$TERM_PROGRAM" != "OTHERS" ]; then
+if [[ -z "$TMUX" ]] && [ "$TERM_PROGRAM" = "kitty" ]; then
   tmux has 2> /dev/null || tmux -2 new-session -s new_tmux && tmux -2 attach
   #test -z "$TMUX" && (tmux attach || tmux new-session)
 fi
@@ -147,13 +152,13 @@ fi
 plugins=(
 	git
 	yarn
-	docker
 	history
 	history-substring-search
 	autojump
+  docker
 	brew
 	gh
-	vi-mode
+	#vi-mode
 	fzf
 #	zsh-autosuggestions
 	tmuxinator
@@ -408,9 +413,9 @@ alias icat="kitty +kitten icat"
 alias top="bpytop"
 alias cat="bat --theme Dracula"
 alias python="python3"
-alias pip="pip3"
+alias pip="python -m pip install -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com"
 alias redis\-server="redis-server /usr/local/etc/redis.conf"
-alias ssh="kitty +kitten ssh"
+# alias ssh="kitty +kitten ssh"
 
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 
@@ -435,7 +440,6 @@ export LC_ALL=zh_CN.UTF-8
 export LANG=zh_CN.UTF-8
 
 
-source /Users/liona/.docker/init-zsh.sh || true # Added by Docker Desktop
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 set rtp+=/opt/homebrew/opt/fzf
